@@ -71,7 +71,7 @@ export class LoginPage implements OnInit {
          //console.log("sending _this.userIdTag to server", userIdTag)
          console.log("sending request", "https://api.anomoz.com/api/vento/post/get_user.php?email="+email+"&password="+password);
 
-         request.open("POST", "https://api.anomoz.com/api/vento/post/get_user.php?email="+email+"&password="+password);
+         request.open("POST", "https://api.anomoz.com/api/swift/post/get_user.php?email="+email+"&password="+password);
          request.send();
      }
      
@@ -86,7 +86,7 @@ export class LoginPage implements OnInit {
        else{
         _this.hotelService.storeSignupData(dataParsed[0].name, email, password, dataParsed[0].userIdTag);
         //_this.nav.setRoot('page-hotel');  
-        //_this.myApp.setRoot(); 
+        _this.myApp.setRoot(); 
         //console.log(sampleTrans)
            
           	

@@ -25,7 +25,6 @@ export class SignupPage implements OnInit {
   name = ""
   email = ""
   password = ""
-  phoneNumber = ""
   userIdTag = ""
 
   constructor(public app: App, private _fb: FormBuilder, public nav: NavController, private hotelService: PservicesProvider, public myApp: MyApp) {
@@ -35,9 +34,6 @@ export class SignupPage implements OnInit {
   ngOnInit() {
     this.onRegisterForm = this._fb.group({
       fullName: ['', Validators.compose([
-        Validators.required
-      ])],
-      phoneNumber: ['', Validators.compose([
         Validators.required
       ])],
       email: ['', Validators.compose([
@@ -50,7 +46,7 @@ export class SignupPage implements OnInit {
   }
 
   // register and go to home page
-  register(fullName, email, password, phoneNumber) {
+  register(fullName, email, password) {
     
     //upload user
     var d = new Date();
@@ -60,16 +56,14 @@ export class SignupPage implements OnInit {
       "name":fullName,
       "email":email,
       "password":password,
-      "phoneNumber":phoneNumber,
       "userIdTag": userIdTag,
       "address": ""
       }
        
-     console.log("value", fullName ,email, password, userIdTag, phoneNumber )
+     console.log("value", fullName ,email, password, userIdTag )
      this.uploadUserToDatabase(aboutUser);
 
      this.name = fullName
-     this.phoneNumber = phoneNumber
      this.email = email
      this.password = password
      this.userIdTag = userIdTag;
@@ -97,7 +91,7 @@ export class SignupPage implements OnInit {
                       //document.getElementById("noInternet").style.display = "block";
                   }
               }; 
-              request.open("POST", "https://api.anomoz.com/api/vento/post/user_create.php")
+              request.open("POST", "https://api.anomoz.com/api/swift/post/user_create.php")
               request.send(JSON.stringify(aboutUser));
           }
           var frameUploadUser = function mycallback(data) {
@@ -106,8 +100,7 @@ export class SignupPage implements OnInit {
             
             _this.hotelService.storeSignupData(_this.name, _this.email, _this.password, _this.userIdTag);
             //redirect to home
-            //_this.nav.setRoot('page-home');
-            //_this.myApp.setRoot(); 
+            _this.myApp.setRoot(); 
           }
 
           InitiateUploadUser(frameUploadUser); //passing mycallback as a method  

@@ -17,15 +17,7 @@
             </ion-label>
         <ion-input type="text" formControlName="fullName" required></ion-input>
       </ion-item>
-
-      <ion-item style="background-color: #eaf2e3;">
-          <ion-label floating>
-              <ion-icon name="call" item-start class="text-white"></ion-icon>
-              Phone Number
-            </ion-label>
-        <ion-input type="text" formControlName="phoneNumber" required></ion-input>
-      </ion-item>
-     
+    
       <ion-item style="background-color: #eaf2e3;">
           <ion-label floating>
               <ion-icon name="mail" item-start class="text-white"></ion-icon>
@@ -47,7 +39,7 @@
 
     <br>
       <div style="margin: 10px;">
-      <button ion-button icon-start large block color="primary" tappable (click)="register(onRegisterForm.get('fullName').value, onRegisterForm.get('email').value, onRegisterForm.get('password').value,onRegisterForm.get('phoneNumber').value)" [disabled]="!onRegisterForm.valid">
+      <button ion-button icon-start large block color="primary" tappable (click)="register(onRegisterForm.get('fullName').value, onRegisterForm.get('email').value, onRegisterForm.get('password').value)" [disabled]="!onRegisterForm.valid">
         SIGN UP
       </button>
     </div>
