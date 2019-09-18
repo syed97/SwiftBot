@@ -1,17 +1,39 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+
+  <ion-grid style="padding: 0px;">
+    <img class="full-image" style="height:140px;width: 100%; overflow: none;" src="https://i.dailymail.co.uk/i/pix/2013/11/03/article-2486855-192ACC5200000578-958_964x682.jpg">
+    <div padding>
+      <button  ion-button full (click)="sendPackage()">Send Package</button>
+    </div>
+</ion-grid>
+
+<!--list of hotels-->
+  <ion-grid class="list-hotels" no-padding>
+      <div padding-horizontal text-center class="animated fadeInDown">
+          <br>
+          <h5 ion-text class="text-white" no-margin color="primary">
+            Ongoing Deliveries
+          </h5>
+        </div>
+    <ion-row no-padding>
+      <ion-col no-padding tappable col-12 col-md-6 col-lg-6 col-xl-4 *ngFor="let hotel of hotels"  (click)="viewHotel(hotel)">
+        <ion-card>
+          <ion-card-header style="padding:0px; padding-left: 10px;">
+            <ion-card-title color="primary" style="font-size: 20px;">
+              {{hotel.name}}
+            </ion-card-title>
+            <p color="primary">I'll handle your decorations for 5000Rs. </p>
+          </ion-card-header>
+        </ion-card>    
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>
