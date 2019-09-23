@@ -87,8 +87,8 @@ export class AddreceiverPage {
   viewReceiver(location){
     console.log('location', location)
     this.selectedLocationId = location.name;
-    document.getElementById('finalResultText').innerText = location.name;
-    document.getElementById('finalResult').style.display = "block";
+    document.getElementById('finalResultText').innerText = "Send to "+ location.name;
+    //document.getElementById('finalResult').style.display = "block";
     //this.navCtrl.push('addLocation');
   }
 
