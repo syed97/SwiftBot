@@ -18,13 +18,20 @@
   
 
   <ion-list>
-      <ion-item *ngFor="let location of locations" (click)="viewlocation(location)">
+      <ion-item *ngFor="let location of locations" (click)="viewlocation(location)" style="background-color: #d5e0ff;">
         <ion-label>{{location.name}}</ion-label>
       </ion-item>
     </ion-list>
+
+    <div>
+      <p text-center (click)="addNewLocation()">Can't find the desired location? Add it here.</p>
+    </div>
   
 </ion-content>
 
 <ion-footer>
+    <ion-toolbar color="secondary" id="finalResult" style="display: none;">
+        <h3 style="color:blue;" text-center id="finalResultText">Cafetaria</h3>
+    </ion-toolbar>
     <button ion-button full (click)="addReceiver()">Add Receiver</button>
 </ion-footer>

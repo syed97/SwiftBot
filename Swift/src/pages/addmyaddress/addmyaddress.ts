@@ -22,26 +22,17 @@ export class AddmyaddressPage {
    public locations: any;
    locationNameSearch: string;
    locationsCopy: any;
+   selectedLocationId: any;
    
    
   constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider) {
   }
-
-  addReceiver(){
-    this.navCtrl.push('addreceiver');
-  }
-
   
   ionViewDidLoad() {
-    //window.open("https://anomoz.com", '_system');
-       // set sample data
-       this.locations = this.pservices.getAll();
-       this.locationNameSearch = ""
-       //Maintain a copy of data on which needs a search
-       //this.locationsCopy = this.locations;
-         
-      // init map
-      // this.initializeMap();
+      // set sample data
+      this.locations = this.pservices.getAll();
+      this.locationNameSearch = ""
+       
       var _this2 = this; 
       setTimeout(function(){
         _this2.updateData()
@@ -78,11 +69,8 @@ export class AddmyaddressPage {
     }
   
     updateData(){
-      //console.log("locations data", this.locations);
       this.locations = this.pservices.getAll();
-      this.locationsCopy = this.locations;
-      //console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
-      
+      this.locationsCopy = this.locations;      
     }
   
     resetChanges(){
@@ -91,10 +79,29 @@ export class AddmyaddressPage {
     }
     
     searchLocation(){
-      //console.log("keywords", this.locationNameSearch)
       this.resetChanges();
       this.locations = this.locations.filter((item)=>{
         return item.name.toLowerCase().indexOf(this.locationNameSearch.toLowerCase())>-1;
       })
     } 
+
+    viewlocation(location){
+      console.log('location', location)
+      this.selectedLocationId = location.name;
+      document.getElementById('finalResultText').innerText = location.name;
+      document.getElementById('finalResult').style.display = "block";
+      //this.navCtrl.push('addLocation');
+    }
+
+    addNewLocation(){
+      console.log("addNewLocation")
+      this.navCtrl.push('newlocation')
+    }
+
+    addReceiver(){
+      this.navCtrl.push('addreceiver',{
+        'myLocation': this.selectedLocationId
+      });
+    }
+    
 }
