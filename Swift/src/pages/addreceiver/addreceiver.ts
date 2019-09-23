@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {PservicesProvider} from "../../providers/pservices/pservices";
 
 /**
  * Generated class for the AddreceiverPage page.
@@ -17,7 +18,88 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AddreceiverPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  // list of receivers
+  public receivers: any;
+  receiverNameSearch: string;
+  receiversCopy: any;
+  selectedLocationId: any;
+  
+  constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider) {
+  }
+
+  ionViewDidLoad() {
+    // set sample data
+    this.receivers = this.pservices.getAll();
+    this.receiverNameSearch = ""
+     
+    var _this2 = this; 
+    setTimeout(function(){
+      _this2.updateData()
+    }, 100);
+
+    setTimeout(function(){
+      _this2.updateData()
+    }, 200);  
+
+    setTimeout(function(){
+      _this2.updateData()
+    }, 300);
+
+    setTimeout(function(){
+      _this2.updateData()
+    }, 500);
+
+    setTimeout(function(){
+          _this2.updateData()
+    }, 900);
+
+    setTimeout(function(){
+      _this2.updateData()
+    }, 1100);
+
+    setTimeout(function(){
+      _this2.updateData()
+    }, 1300);
+
+    setTimeout(function(){
+      _this2.updateData()
+    }, 1500);
+
+  }
+
+  updateData(){
+    this.receivers = this.pservices.getAll();
+    this.receiversCopy = this.receivers;      
+  }
+
+  resetChanges(){
+    console.log("reset", this.receivers, this.receiversCopy)
+    this.receivers = this.receiversCopy
+  }
+  
+  searchReceiver(){
+    this.resetChanges();
+    this.receivers = this.receivers.filter((item)=>{
+      return item.name.toLowerCase().indexOf(this.receiverNameSearch.toLowerCase())>-1;
+    })
+  } 
+
+  viewReceiver(location){
+    console.log('location', location)
+    this.selectedLocationId = location.name;
+    document.getElementById('finalResultText').innerText = location.name;
+    document.getElementById('finalResult').style.display = "block";
+    //this.navCtrl.push('addLocation');
+  }
+
+  addReceiver(){
+    this.navCtrl.push('addreceiver',{
+      'myLocation': this.selectedLocationId
+    });
+  }
+
+  send(){
+
   }
   
 }

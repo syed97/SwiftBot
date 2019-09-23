@@ -10,11 +10,11 @@ import { Storage } from '@ionic/storage';
   templateUrl: 'home.html'
 })
 export class HomePage {
-   // list of hotels
-   public hotels: any;
+   // list of bookings
+   public bookings: any;
    nPeople: string;
    resturantNameSearch: string;
-   hotelsCopy: any;
+   bookingsCopy: any;
 
   constructor(public storage: Storage, public app: App, public nav: NavController, public navParams: NavParams, public pservices: PservicesProvider, public platform: Platform, public actionSheetController: ActionSheetController) {
    
@@ -23,11 +23,11 @@ export class HomePage {
   ionViewWillLoad() {
        // set sample data
        console.log("ionViewWillLoad home")
-       this.hotels = this.pservices.getAll();
+       this.bookings = this.pservices.getAll();
        this.nPeople = "2";
        this.resturantNameSearch = ""
        //Maintain a copy of data on which needs a search
-       //this.hotelsCopy = this.hotels;
+       //this.bookingsCopy = this.bookings;
          
       // init map
       // this.initializeMap();
@@ -78,9 +78,9 @@ export class HomePage {
     }
   
     updateData1_4(){
-      //console.log("hotels data", this.hotels);
-      this.hotels = this.pservices.getAll();
-      this.hotelsCopy = this.hotels;
+      //console.log("bookings data", this.bookings);
+      this.bookings = this.pservices.getAll();
+      this.bookingsCopy = this.bookings;
       //console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
       
     }
@@ -94,20 +94,20 @@ export class HomePage {
       });
     }
 
-    // view all hotels
-    viewHotels() {
-      this.nav.push('page-hotel');
+    // view all bookings
+    viewbookings() {
+      this.nav.push('view-booking');
     }
 
     resetChanges(){
-      console.log("reset", this.hotels, this.hotelsCopy)
-      this.hotels = this.hotelsCopy
+      console.log("reset", this.bookings, this.bookingsCopy)
+      this.bookings = this.bookingsCopy
     }
     
     searchResturants(){
       //console.log("keywords", this.resturantNameSearch)
       this.resetChanges();
-      this.hotels = this.hotels.filter((item)=>{
+      this.bookings = this.bookings.filter((item)=>{
         return item.name.toLowerCase().indexOf(this.resturantNameSearch.toLowerCase())>-1;
       })
     }

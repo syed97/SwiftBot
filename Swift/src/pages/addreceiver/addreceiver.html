@@ -8,13 +8,25 @@
     <ion-navbar color="primary">
       <ion-title>Add Receiver</ion-title>
     </ion-navbar>
+    <ion-toolbar color="secondary">
+        <ion-searchbar [(ngModel)]="receiverNameSearch" (ionInput)="searchReceiver()" (ionCancel)="showItems = !showItems" autocomplete="on" autocorrect="on" spellcheck="true" animated="true" placeholder="Type receiver's name"></ion-searchbar>
+    </ion-toolbar>
   </ion-header>
   
-  <ion-content padding>
+  <ion-content>
 
+    <ion-list>
+        <ion-item class="ion-item" *ngFor="let receiver of receivers" (click)="viewReceiver(receiver)">
+          <ion-label>{{receiver.name}}</ion-label>
+        </ion-item>
+      </ion-list>
+    
   </ion-content>
   
   <ion-footer>
+      <ion-toolbar color="secondary" id="finalResult" style="display: none;">
+          <h3 style="color:blue;" text-center id="finalResultText">Cafetaria</h3>
+      </ion-toolbar>
       <button ion-button full (click)="send()">Send</button>
   </ion-footer>
   

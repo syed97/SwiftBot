@@ -8,7 +8,7 @@
   <ion-navbar color="primary">
     <ion-title>Add your address</ion-title>
   </ion-navbar>
-  <ion-toolbar padding color="secondary">
+  <ion-toolbar color="secondary">
       <ion-searchbar [(ngModel)]="locationNameSearch" (ionInput)="searchLocation()" (ionCancel)="showItems = !showItems" autocomplete="on" autocorrect="on" spellcheck="true" animated="true" placeholder="Type your location."></ion-searchbar>
   </ion-toolbar>
 </ion-header>
@@ -18,7 +18,7 @@
   
 
   <ion-list>
-      <ion-item *ngFor="let location of locations" (click)="viewlocation(location)" style="background-color: #d5e0ff;">
+      <ion-item class="ion-item" *ngFor="let location of locations" (click)="viewlocation(location)">
         <ion-label>{{location.name}}</ion-label>
       </ion-item>
     </ion-list>
