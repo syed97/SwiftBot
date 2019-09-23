@@ -121,5 +121,18 @@ export class HomePage {
       this.nav.push('createpost');
     }
   
+    viewBooking(booking){
+      this.nav.push('delivery-details',{
+        'delId': booking.name
+      });
+    }
+
+    about(){
+      this.nav.push('about');
+    }
+
+    allDeliveries(){
+      this.nav.push('history');
+    }
 
 }
