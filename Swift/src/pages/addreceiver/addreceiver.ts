@@ -19,9 +19,5 @@ export class AddreceiverPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AddreceiverPage');
-  }
-
+  
 }

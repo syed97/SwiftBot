@@ -16,14 +16,14 @@ export class HomePage {
    resturantNameSearch: string;
    hotelsCopy: any;
 
-  constructor(public storage: Storage, public app: App, public nav: NavController, public navParams: NavParams, public hotelService: PservicesProvider, public platform: Platform, public actionSheetController: ActionSheetController) {
+  constructor(public storage: Storage, public app: App, public nav: NavController, public navParams: NavParams, public pservices: PservicesProvider, public platform: Platform, public actionSheetController: ActionSheetController) {
    
   }
 
   ionViewWillLoad() {
        // set sample data
        console.log("ionViewWillLoad home")
-       this.hotels = this.hotelService.getAll();
+       this.hotels = this.pservices.getAll();
        this.nPeople = "2";
        this.resturantNameSearch = ""
        //Maintain a copy of data on which needs a search
@@ -79,16 +79,16 @@ export class HomePage {
   
     updateData1_4(){
       //console.log("hotels data", this.hotels);
-      this.hotels = this.hotelService.getAll();
+      this.hotels = this.pservices.getAll();
       this.hotelsCopy = this.hotels;
-      //console.log("this.hotelService.getAcountStatus()", this.hotelService.getAcountStatus())
+      //console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
       
     }
    
     // view hotel detail
     viewHotel(hotel) {
       // console.log(hotel.id)
-      this.hotelService.setResturantId(hotel.id);
+      this.pservices.setResturantId(hotel.id);
       this.nav.push('hotel-details', {
         'id': hotel.id
       });
