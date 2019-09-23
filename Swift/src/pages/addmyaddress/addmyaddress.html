@@ -8,41 +8,21 @@
   <ion-navbar color="primary">
     <ion-title>Add your address</ion-title>
   </ion-navbar>
+  <ion-toolbar padding color="secondary">
+      <ion-searchbar [(ngModel)]="locationNameSearch" (ionInput)="searchLocation()" (ionCancel)="showItems = !showItems" autocomplete="on" autocorrect="on" spellcheck="true" animated="true" placeholder="Type your location."></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
 
-  <ion-searchbar [(ngModel)]="resturantNameSearch" (ionInput)="searchResturants()" (ionCancel)="showItems = !showItems" autocomplete="on" autocorrect="on" spellcheck="true" animated="true" placeholder="Resturant"></ion-searchbar>
-
-  <ion-grid class="list-locations" no-padding>
-    <ion-row no-padding>
-      <ion-col no-padding tappable col-12 col-md-6 col-lg-6 col-xl-4 *ngFor="let location of locations" (click)="viewlocation(location)">
-        <div class="location-bg" [ngStyle]="{'background-image': 'url(' + location.thumb + ')'}">
-          <div class="bg-filter">
-            <div class="bottom-info">
-                <div>
-                    <div class="pull-left">
-                      <h5 ion-text class="text-white">{{ location.name }}</h5>
-                    </div>
-                    
-                    <div class="clear"></div>
-                  </div>
-
-              <div>
-                <div class="pull-left">
-                  <ion-badge class="square" color="secondary">{{ location.rating }}</ion-badge>
-                  <span class="rating-label text-white" ion-text> of 5 - Rating</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
   
 
+  <ion-list>
+      <ion-item *ngFor="let location of locations" (click)="viewlocation(location)">
+        <ion-label>{{location.name}}</ion-label>
+      </ion-item>
+    </ion-list>
+  
 </ion-content>
 
 <ion-footer>
