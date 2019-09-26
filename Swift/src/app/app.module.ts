@@ -9,6 +9,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PservicesProvider } from '../providers/pservices/pservices';
 
+import { MediaCapture } from '@ionic-native/media-capture/ngx';
+import { Media } from '@ionic-native/media/ngx';
+import { File } from '@ionic-native/file/ngx';
+ 
 import {IonicStorageModule} from '@ionic/storage';
 
 @NgModule({
@@ -30,7 +34,10 @@ import {IonicStorageModule} from '@ionic/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PservicesProvider
+    PservicesProvider,
+    MediaCapture,
+    Media,
+    File
   ]
 })
 export class AppModule {}
