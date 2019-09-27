@@ -100,10 +100,14 @@ export class SignupPage implements OnInit {
             
             _this.hotelService.storeSignupData(_this.name, _this.email, _this.password, _this.userIdTag);
             //redirect to home
-            _this.myApp.setRoot(); 
+            _this.addFace(); 
           }
 
           InitiateUploadUser(frameUploadUser); //passing mycallback as a method  
+  }
+
+  addFace(){
+    this.nav.setRoot('addface');
   }
  
 }

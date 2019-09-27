@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, Platform, LoadingController } from 'ionic-angular';
 import {Camera,CameraOptions} from '@ionic-native/camera';
 import { PservicesProvider } from '../../providers/pservices/pservices';
-import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer/ngx';
-
+//import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer/ngx';
+//import { MediaCapture, MediaFile, CaptureError, CaptureVideoOptions } from '@ionic-native/media-capture/ngx';
+import { DomSanitizer } from '@angular/platform-browser';
 /**
  * Generated class for the AddfacePage page.
  *
@@ -20,74 +21,17 @@ import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-nati
 })
 
 export class AddfacePage {
-  base64img:string='';
-  constructor(public imgpov:PservicesProvider, public nav: NavController,private platform: Platform,private camera:Camera,public loadingCtrl: LoadingController,private transfer: FileTransfer ) {
+  my_url: any;
+
+  constructor(public imgpov:PservicesProvider, public nav: NavController,private platform: Platform,private camera:Camera,public loadingCtrl: LoadingController, private sanitize: DomSanitizer ) {
   }
 
-  imageCaptured(){
-    const options:CameraOptions={
-      quality:70,
-      destinationType:this.camera.DestinationType.DATA_URL,
-      encodingType:this.camera.EncodingType.JPEG,
-      mediaType:this.camera.MediaType.VIDEO
-    }
-    this.camera.getPicture(options).then((ImageData=>{
-       this.base64img="data:image/jpeg;base64,"+ImageData;
-    }),error=>{
-      console.log(error);
-    })
+  urlpaste(){
+    this.my_url = "https://projects.anomoz.com/swift/addFace.php";
+    return this.sanitize.bypassSecurityTrustResourceUrl(this.my_url);
   }
 
-  imageCapturedGallery(){
-    const options:CameraOptions={
-      quality:70,
-      destinationType:this.camera.DestinationType.DATA_URL,
-      sourceType:this.camera.PictureSourceType.PHOTOLIBRARY,
-      saveToPhotoAlbum:false
-    }
-    this.camera.getPicture(options).then((ImageData=>{
-       this.base64img="data:image/jpeg;base64,"+ImageData;
-    }),error=>{
-      console.log(error);
-    })
-  }
-  nextPage(){
-    //this.imgpov.setImage(this.base64img);
-    //this.nav.push('IdentifyphotoPage');
-    this.uploadPic();
-  }
-
-  clear(){
-    this.base64img='';
-  }
-
-  uploadPic() {
-    /**
-    this.base64img = this.imgpov.getImage();
-    let loader = this.loadingCtrl.create({
-      content: "Uploading...."
-    });
-    loader.present();
-
-    const fileTransfer: FileTransferObject = this.transfer.create();
-
-    let options: FileUploadOptions = {
-      fileKey: "photo",
-      fileName: "test3.jpg",
-      chunkedMode: false,
-      mimeType: "image/jpeg",
-      headers: {}
-    }
-
-    fileTransfer.upload(this.base64img, 'https://projects.anomoz.com/fooPan/imageUpload.php', options).then(data => {
-      //alert(JSON.stringify(data));
-      loader.dismiss();
-      this.nav.push('IdentifyphotoPage');
-    }, error => {
-      alert("error");
-      alert("error" + JSON.stringify(error));
-      loader.dismiss();
-    });
-     */
+  addMyLocation(){
+    this.nav.push('add-default-location');
   }
 }

@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
+
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PservicesProvider } from '../providers/pservices/pservices';
 
@@ -14,6 +15,7 @@ import {IonicStorageModule} from '@ionic/storage';
 import { Camera } from '@ionic-native/camera';
 import { File } from '@ionic-native/file/ngx';
 import { FileTransfer } from '@ionic-native/file-transfer/ngx';
+import { MediaCapture } from '@ionic-native/media-capture/ngx';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { FileTransfer } from '@ionic-native/file-transfer/ngx';
     PservicesProvider,
     Camera,
     File,
-    FileTransfer
+    FileTransfer,
+    MediaCapture
   ]
 })
 export class AppModule {}
