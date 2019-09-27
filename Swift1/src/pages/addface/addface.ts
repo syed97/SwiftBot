@@ -29,7 +29,7 @@ export class AddfacePage {
       quality:70,
       destinationType:this.camera.DestinationType.DATA_URL,
       encodingType:this.camera.EncodingType.JPEG,
-      mediaType:this.camera.MediaType.PICTURE
+      mediaType:this.camera.MediaType.VIDEO
     }
     this.camera.getPicture(options).then((ImageData=>{
        this.base64img="data:image/jpeg;base64,"+ImageData;

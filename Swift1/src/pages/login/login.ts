@@ -99,4 +99,8 @@ export class LoginPage implements OnInit {
      InitiateGetTransactions(email, password, frameTransactions); //passing mycallback as a method 
   }
 
+  test(){
+    this.nav.push('addface');
+  }
+
 }
