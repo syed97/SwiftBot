@@ -40,7 +40,9 @@ import { MediaCapture } from '@ionic-native/media-capture/ngx';
     Camera,
     File,
     FileTransfer,
-    MediaCapture
+    MediaCapture,
+    //HomePage,
+    
   ]
 })
 export class AppModule {}

@@ -96,7 +96,6 @@ export class SignupPage implements OnInit {
           }
           var frameUploadUser = function mycallback(data) {
             console.log("user received from server," , data)
-
             
             _this.hotelService.storeSignupData(_this.name, _this.email, _this.password, _this.userIdTag);
             //redirect to home
@@ -107,7 +106,7 @@ export class SignupPage implements OnInit {
   }
 
   addFace(){
-    this.nav.setRoot('addface');
+    this.nav.push('addface');
   }
  
 }

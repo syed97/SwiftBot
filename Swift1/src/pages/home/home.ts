@@ -68,7 +68,7 @@ export class HomePage {
         console.log("account value found", val)
       if (val===null){
         console.log("no account found. Error!!!", val);
-        this.nav.setRoot('signup');
+        this.nav.push('signup');
       }
      
     });

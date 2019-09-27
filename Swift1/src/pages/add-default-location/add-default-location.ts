@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {PservicesProvider} from "../../providers/pservices/pservices";
+import { MyApp } from '../../app/app.component';
 
 /**
  * Generated class for the AddDefaultLocationPage page.
@@ -25,7 +26,7 @@ export class AddDefaultLocationPage {
    selectedLocationId: any;
    
    
-  constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider, private MyApp: MyApp) {
   }
   
   ionViewDidLoad() {
@@ -98,10 +99,13 @@ export class AddDefaultLocationPage {
       this.navCtrl.push('newlocation')
     }
 
-    addReceiver(){
-      this.navCtrl.push('addreceiver',{
-        'myLocation': this.selectedLocationId
-      });
+    toDashboard(){
+      //this.navCtrl.setRoot('addreceiver');
+      //this.MyApp.setRoot()
+
+      this.navCtrl.popToRoot()
+      //this.navCtrl.setRoot(HomePage);
+      
     }
     
 }
