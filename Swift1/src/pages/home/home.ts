@@ -135,4 +135,8 @@ export class HomePage {
       this.nav.push('history');
     }
 
+    test(){
+      this.nav.push('addface');
+    }
+
 }

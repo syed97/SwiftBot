@@ -11,6 +11,10 @@ import { PservicesProvider } from '../providers/pservices/pservices';
 
 import {IonicStorageModule} from '@ionic/storage';
 
+import { Camera } from '@ionic-native/camera';
+import { File } from '@ionic-native/file/ngx';
+import { FileTransfer } from '@ionic-native/file-transfer/ngx';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -30,7 +34,10 @@ import {IonicStorageModule} from '@ionic/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PservicesProvider
+    PservicesProvider,
+    Camera,
+    File,
+    FileTransfer
   ]
 })
 export class AppModule {}
