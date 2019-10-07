@@ -26,10 +26,12 @@ export class AddmyaddressPage {
    
    
   constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider) {
+    this.pservices.getUsersFromServer();
   }
   
   ionViewDidLoad() {
       // set sample data
+      this.pservices.getUsersFromServer();
       this.locations = this.pservices.getAllLocations();
       this.locationNameSearch = ""
        

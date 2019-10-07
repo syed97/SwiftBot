@@ -17,6 +17,8 @@ export class PservicesProvider {
   allUsersTemp: any;
   onGoingDeliveries: any;
   onGoingDeliveriesTemp: any;
+  allBookings: any;
+  allBookingsTemp: any;
   
 
   account: any;
@@ -48,10 +50,7 @@ export class PservicesProvider {
     ]
      */
     this.checkifAccount();
-    this.getLocationsFromServer();
-    this.getUsersFromServer();
-    this.getOngoingDeliveriesFromServer();
-    
+    this.getLocationsFromServer();   
   }
 
   checkifAccount(){
@@ -81,6 +80,7 @@ export class PservicesProvider {
           'receiverId': '',
         } 
         console.log("initialized")
+        this.getOngoingDeliveriesFromServer(this.userIdTag);
       }
     });
      
@@ -101,7 +101,6 @@ export class PservicesProvider {
     t.setSeconds(secs);
     return t;
   }
-
 
   getLocationsFromServer(){
     var InitiateGetTransactions = function(callback) // How can I use this callback?
@@ -151,7 +150,7 @@ export class PservicesProvider {
      InitiateGetTransactions(frameTransactions); //passing mycallback as a method 
   }
 
-  getOngoingDeliveriesFromServer(){
+  getallBookingsFromServer(){
     var InitiateGetTransactions = function(callback) // How can I use this callback?
      {
          var request = new XMLHttpRequest();
@@ -167,7 +166,55 @@ export class PservicesProvider {
              }
          }; 
          //console.log("sending _this.userIdTag to server", userIdTag)
-         request.open("POST", "https://api.anomoz.com/api/swift/post/read_all_users.php");
+         request.open("POST", "https://api.anomoz.com/api/swift/post/read_all_locations.php");
+         request.send();
+     }
+     
+     var _this = this;
+     var frameTransactions = function mycallback(data) {
+      _this.allBookingsTemp = []
+       //console.log("locations received from server," , data)
+       var dataParsed
+       dataParsed = JSON.parse(data);
+       if(dataParsed.message=="none"){
+         //console.log("no locations")
+       }
+       else{
+         var sampleTrans = dataParsed
+           //console.log(sampleTrans)
+           for (var i=0; i<sampleTrans.length; i++){
+            //check if hotel already
+              var a = {
+                id: sampleTrans[i].id,
+                name: sampleTrans[i].name,
+            }
+            _this.allBookingsTemp.push(a)
+          	
+          }
+          //add to local storage
+          _this.allBookings = _this.allBookingsTemp
+       }
+     }
+     InitiateGetTransactions(frameTransactions); //passing mycallback as a method 
+  }
+
+  getOngoingDeliveriesFromServer(userIdTag){
+    var InitiateGetTransactions = function(callback) // How can I use this callback?
+     {
+         var request = new XMLHttpRequest();
+         request.onreadystatechange = function()
+         {
+             if (request.readyState == 4 && request.status == 200)
+             {
+                 callback(request.responseText); // Another callback here
+             }
+             if (request.readyState == 4 && request.status == 0)
+             {
+                 //console.log("no response for resturants") // Another callback here
+             }
+         }; 
+         //console.log("sending _this.userIdTag to server", userIdTag)
+         request.open("POST", "https://api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php?userIdTag="+userIdTag);
          request.send();
      }
      
@@ -186,8 +233,10 @@ export class PservicesProvider {
            for (var i=0; i<sampleTrans.length; i++){
             //check if hotel already
               var a = {
-                id: sampleTrans[i].id,
-                name: sampleTrans[i].name,
+                id: sampleTrans[i].bookingId,
+                toLocation: sampleTrans[i].toLocation,
+                fromLocation: sampleTrans[i].fromLocation,
+                status: sampleTrans[i].status,
             }
             _this.onGoingDeliveriesTemp.push(a)
           	
@@ -279,6 +328,10 @@ export class PservicesProvider {
 
   getOnGoingDeliveries(){
     return this.onGoingDeliveries;
+  }
+
+  getAllBookings(){
+    return this.allBookings;
   }
   
 }

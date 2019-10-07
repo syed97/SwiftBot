@@ -31,7 +31,7 @@ export class AddDefaultLocationPage {
   
   ionViewDidLoad() {
       // set sample data
-      this.locations = this.pservices.getAll();
+      //this.locations = this.pservices.getAll();
       this.locationNameSearch = ""
        
       var _this2 = this; 
@@ -70,7 +70,7 @@ export class AddDefaultLocationPage {
     }
   
     updateData(){
-      this.locations = this.pservices.getAll();
+      //this.locations = this.pservices.getAll();
       this.locationsCopy = this.locations;      
     }
   

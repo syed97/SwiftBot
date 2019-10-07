@@ -32,8 +32,9 @@ export class HistoryPage {
 
   ionViewWillLoad() {
     // set sample data
+    this.pservices.getallBookingsFromServer();
     console.log("ionViewWillLoad home")
-    this.bookings = this.pservices.getAll();
+    this.bookings = this.pservices.getAllBookings();
     this.nPeople = "2";
     this.resturantNameSearch = ""
     //Maintain a copy of data on which needs a search
@@ -78,19 +79,10 @@ export class HistoryPage {
 
  updateData1_4(){
    //console.log("bookings data", this.bookings);
-   this.bookings = this.pservices.getAll();
+   this.bookings = this.pservices.getAllBookings();
    this.bookingsCopy = this.bookings;
    //console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
    
- }
-
- // view hotel detail
- viewHotel(hotel) {
-   // console.log(hotel.id)
-   this.pservices.setResturantId(hotel.id);
-   this.nav.push('hotel-details', {
-     'id': hotel.id
-   });
  }
 
  // view all bookings
@@ -98,41 +90,10 @@ export class HistoryPage {
    this.nav.push('view-booking');
  }
 
- resetChanges(){
-   console.log("reset", this.bookings, this.bookingsCopy)
-   this.bookings = this.bookingsCopy
- }
- 
- searchResturants(){
-   //console.log("keywords", this.resturantNameSearch)
-   this.resetChanges();
-   this.bookings = this.bookings.filter((item)=>{
-     return item.name.toLowerCase().indexOf(this.resturantNameSearch.toLowerCase())>-1;
-   })
- }
-
- sendPackage(){
-   console.log("viewClicked", screen)
-   this.nav.push('addmyaddress');
- }
-
- createPost(){
-   this.nav.push('createpost');
- }
-
  viewBooking(booking){
    this.nav.push('delivery-details',{
      'delId': booking.name
    });
  }
-
- about(){
-   this.nav.push('about');
- }
-
- allDeliveries(){
-   this.nav.push('history');
- }
-
 
 }

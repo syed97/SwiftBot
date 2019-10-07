@@ -22,6 +22,7 @@ export class HomePage {
   ionViewWillLoad() {
        // set sample data
        //console.log("ionViewWillLoad home")
+       //this.pservices.getallBookingsFromServer()
        this.bookings = this.pservices.getAllLocations();
        this.nPeople = "2";
        this.resturantNameSearch = ""
