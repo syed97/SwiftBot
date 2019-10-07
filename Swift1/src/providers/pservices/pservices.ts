@@ -88,12 +88,9 @@ export class PservicesProvider {
         this.createBooking = {
           'userIdTag': this.userIdTag,
           'senderLocation': '',
-          'receiver': '',
-          'timeAdded': ''
+          'receiverId': '',
         } 
         console.log("initialized")
-
-
       }
     });
      
@@ -586,58 +583,6 @@ export class PservicesProvider {
         }
       });
   	return retValue;
-  }
-
-  getReviewsFromServer(resId){
-    var InitiateGetTransactions = function(callback) // How can I use this callback?
-     {
-         var request = new XMLHttpRequest();
-         request.onreadystatechange = function()
-         {
-             if (request.readyState == 4 && request.status == 200)
-             {
-                 callback(request.responseText); // Another callback here
-             }
-             if (request.readyState == 4 && request.status == 0)
-             {
-                 //console.log("no response for resturants") // Another callback here
-             }
-         }; 
-         request.open("POST", "https://api.anomoz.com/api/fooPan/post/read_resturant_ratings.php?resId="+resId);
-         request.send();
-     }
-     
-     var _this = this;
-     var frameTransactions = function mycallback(data) {
-      _this.reviewsTemp = []
-       //console.log("resturants received from server," , data)
-       var dataParsed
-       dataParsed = JSON.parse(data);
-       if(dataParsed.message=="none"){
-         //console.log("no resturants")
-       }
-       else{
-         var sampleTrans = dataParsed
-           //console.log(sampleTrans)
-           for (var i=0; i<sampleTrans.length; i++){
-          	//check if hotel already
-          		//console.log("new hotel")
-            var a = {
-              name: sampleTrans[i].name,
-              rating: sampleTrans[i].rating,
-              review: sampleTrans[i].review
-            }
-            
-            _this.reviewsTemp.push(a)
-          	
-          }
-          //add to local storage
-          _this.reviews = _this.reviewsTemp
-          //console.log("resturants storage updated", _this.hotels)
-          _this.storage.set('reviews', _this.reviews);
-       }
-     }
-     InitiateGetTransactions(frameTransactions); //passing mycallback as a method 
   }
 
   getHotelAndItemIndex(hotels, hotelId, itemId){

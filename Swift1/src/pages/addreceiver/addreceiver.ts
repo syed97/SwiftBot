@@ -88,7 +88,7 @@ export class AddreceiverPage {
     console.log('location', location)
     this.selectedLocationId = location.id;
     document.getElementById("finalResultTextRec").innerHTML = "Send to "+ location.name;
-    this.pservices.createBooking.receiver = this.selectedLocationId;
+    this.pservices.createBooking.receiverId = this.selectedLocationId;
     //document.getElementById('finalResult').style.display = "block";
     //this.navCtrl.push('addLocation');
   }
@@ -96,9 +96,40 @@ export class AddreceiverPage {
   send(){
     var dateTime = (new Date().getTime() / 1000).toString();
     console.log("dateTime", dateTime)
-    this.pservices.createBooking.timeAdded = dateTime;
+    //this.pservices.createBooking.timeAdded = dateTime;
     console.log("this.pservices.createBooking", this.pservices.createBooking)
+    this.InsertBookingToServer(this.pservices.createBooking)
 
   }
   
+  InsertBookingToServer(aboutUser){
+    var _this = this;
+         var InitiateUploadUser = function(callback) // How can I use this callback?
+          {
+              var request = new XMLHttpRequest();
+              request.onreadystatechange = function()
+              {
+                  if (request.readyState == 4 && request.status == 200)
+                  {
+                      callback(request.responseText); // Another callback here
+                  }
+                  if (request.readyState == 4 && request.status == 0)
+                  {
+                      console.log("no respinse for creating account") // Another callback here
+                  }
+              }; 
+              request.open("POST", "https://api.anomoz.com/api/swift/post/insert_booking.php")
+              request.send(JSON.stringify(aboutUser));
+          }
+          var frameUploadUser = function mycallback(data) {
+            console.log("Response received from server," , data)
+            
+            //redirect to home
+            //_this.nav.setRoot('page-home');
+            //_this.myApp.setRoot(); 
+          }
+
+          InitiateUploadUser(frameUploadUser); //passing mycallback as a method  
+  }
+
 }

@@ -1,0 +1,1 @@
+https://api.anomoz.com/api/swift/post/insert_booking.php
