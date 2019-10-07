@@ -73,7 +73,7 @@ export class AddreceiverPage {
   }
 
   resetChanges(){
-    console.log("reset", this.receivers, this.receiversCopy)
+    //console.log("reset", this.receivers, this.receiversCopy)
     this.receivers = this.receiversCopy
   }
   
@@ -86,19 +86,18 @@ export class AddreceiverPage {
 
   viewReceiver(location){
     console.log('location', location)
-    this.selectedLocationId = location.name;
-    document.getElementById('finalResultText').innerText = "Send to "+ location.name;
+    this.selectedLocationId = location.id;
+    document.getElementById("finalResultTextRec").innerHTML = "Send to "+ location.name;
+    this.pservices.createBooking.receiver = this.selectedLocationId;
     //document.getElementById('finalResult').style.display = "block";
     //this.navCtrl.push('addLocation');
   }
 
-  addReceiver(){
-    this.navCtrl.push('addreceiver',{
-      'myLocation': this.selectedLocationId
-    });
-  }
-
   send(){
+    var dateTime = (new Date().getTime() / 1000).toString();
+    console.log("dateTime", dateTime)
+    this.pservices.createBooking.timeAdded = dateTime;
+    console.log("this.pservices.createBooking", this.pservices.createBooking)
 
   }
   

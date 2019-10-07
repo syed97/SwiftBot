@@ -21,7 +21,7 @@ export class HomePage {
 
   ionViewWillLoad() {
        // set sample data
-       console.log("ionViewWillLoad home")
+       //console.log("ionViewWillLoad home")
        this.bookings = this.pservices.getAll();
        this.nPeople = "2";
        this.resturantNameSearch = ""
@@ -65,28 +65,27 @@ export class HomePage {
   
   
       this.storage.get('userBasicInfo').then((val) => {
-        console.log("account value found", val)
+        //console.log("account value found", val)
       if (val===null){
-        console.log("no account found. Error!!!", val);
+        //console.log("no account found. Error!!!", val);
         this.nav.push('signup');
       }
      
     });
   
-  
     }
   
     updateData1_4(){
-      //console.log("bookings data", this.bookings);
+      ////console.log("bookings data", this.bookings);
       this.bookings = this.pservices.getAll();
       this.bookingsCopy = this.bookings;
-      //console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
+      ////console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
       
     }
    
     // view hotel detail
     viewHotel(hotel) {
-      // console.log(hotel.id)
+      // //console.log(hotel.id)
       this.pservices.setResturantId(hotel.id);
       this.nav.push('hotel-details', {
         'id': hotel.id
@@ -99,12 +98,12 @@ export class HomePage {
     }
 
     resetChanges(){
-      console.log("reset", this.bookings, this.bookingsCopy)
+      //console.log("reset", this.bookings, this.bookingsCopy)
       this.bookings = this.bookingsCopy
     }
     
     searchResturants(){
-      //console.log("keywords", this.resturantNameSearch)
+      ////console.log("keywords", this.resturantNameSearch)
       this.resetChanges();
       this.bookings = this.bookings.filter((item)=>{
         return item.name.toLowerCase().indexOf(this.resturantNameSearch.toLowerCase())>-1;
@@ -112,7 +111,7 @@ export class HomePage {
     }
 
     sendPackage(){
-      console.log("viewClicked", screen)
+      //console.log("viewClicked", screen)
       this.nav.push('addmyaddress');
     }
 

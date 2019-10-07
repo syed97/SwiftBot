@@ -74,7 +74,7 @@ export class AddmyaddressPage {
     }
   
     resetChanges(){
-      console.log("reset", this.locations, this.locationsCopy)
+      //console.log("reset", this.locations, this.locationsCopy)
       this.locations = this.locationsCopy
     }
     
@@ -86,19 +86,21 @@ export class AddmyaddressPage {
     } 
 
     viewlocation(location){
-      console.log('location', location)
-      this.selectedLocationId = location.name;
+      //console.log('location', location)
+      this.selectedLocationId = location.id;
       document.getElementById('finalResultText').innerText = location.name;
       document.getElementById('finalResult').style.display = "block";
       //this.navCtrl.push('addLocation');
     }
 
     addNewLocation(){
-      console.log("addNewLocation")
+      //console.log("addNewLocation")
       this.navCtrl.push('newlocation')
     }
 
     addReceiver(){
+      this.pservices.createBooking.senderLocation = this.selectedLocationId;
+      console.log("this.pservices.createBooking", this.pservices.createBooking)
       this.navCtrl.push('addreceiver',{
         'myLocation': this.selectedLocationId
       });

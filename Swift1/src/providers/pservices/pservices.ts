@@ -32,6 +32,8 @@ export class PservicesProvider {
   userIdTag: string;
   password: string;
 
+  createBooking: any;
+
  
   constructor(public storage: Storage) {
     //this.hotels = HOTELS;
@@ -81,7 +83,17 @@ export class PservicesProvider {
         this.email = val.email;
         this.password = val.password;
         
-        //console.log("account found", val);    
+        //console.log("account found", val);
+        
+        this.createBooking = {
+          'userIdTag': this.userIdTag,
+          'senderLocation': '',
+          'receiver': '',
+          'timeAdded': ''
+        } 
+        console.log("initialized")
+
+
       }
     });
      
