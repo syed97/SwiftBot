@@ -1,1 +1,5 @@
 https://api.anomoz.com/api/swift/post/insert_booking.php
+
+https://api.anomoz.com/api/swift/post/read_all_locations.php
+
+https://api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php

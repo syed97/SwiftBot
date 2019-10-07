@@ -22,7 +22,7 @@ export class HomePage {
   ionViewWillLoad() {
        // set sample data
        //console.log("ionViewWillLoad home")
-       this.bookings = this.pservices.getAll();
+       this.bookings = this.pservices.getAllLocations();
        this.nPeople = "2";
        this.resturantNameSearch = ""
        //Maintain a copy of data on which needs a search
@@ -77,21 +77,12 @@ export class HomePage {
   
     updateData1_4(){
       ////console.log("bookings data", this.bookings);
-      this.bookings = this.pservices.getAll();
+      this.bookings = this.pservices.getOnGoingDeliveries();
       this.bookingsCopy = this.bookings;
       ////console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
       
     }
    
-    // view hotel detail
-    viewHotel(hotel) {
-      // //console.log(hotel.id)
-      this.pservices.setResturantId(hotel.id);
-      this.nav.push('hotel-details', {
-        'id': hotel.id
-      });
-    }
-
     // view all bookings
     viewbookings() {
       this.nav.push('view-booking');

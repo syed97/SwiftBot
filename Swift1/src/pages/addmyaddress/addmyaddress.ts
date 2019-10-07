@@ -30,7 +30,7 @@ export class AddmyaddressPage {
   
   ionViewDidLoad() {
       // set sample data
-      this.locations = this.pservices.getAll();
+      this.locations = this.pservices.getAllLocations();
       this.locationNameSearch = ""
        
       var _this2 = this; 
@@ -69,7 +69,7 @@ export class AddmyaddressPage {
     }
   
     updateData(){
-      this.locations = this.pservices.getAll();
+      this.locations = this.pservices.getAllLocations();
       this.locationsCopy = this.locations;      
     }
   

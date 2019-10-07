@@ -29,7 +29,7 @@ export class AddreceiverPage {
 
   ionViewDidLoad() {
     // set sample data
-    this.receivers = this.pservices.getAll();
+    this.receivers = this.pservices.getAllUsers();
     this.receiverNameSearch = ""
      
     var _this2 = this; 
@@ -68,7 +68,7 @@ export class AddreceiverPage {
   }
 
   updateData(){
-    this.receivers = this.pservices.getAll();
+    this.receivers = this.pservices.getAllUsers();
     this.receiversCopy = this.receivers;      
   }
 
