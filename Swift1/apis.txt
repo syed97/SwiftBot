@@ -3,3 +3,17 @@ https://api.anomoz.com/api/swift/post/insert_booking.php
 https://api.anomoz.com/api/swift/post/read_all_locations.php
 
 https://api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php?userIdTag=1
+
+#get robot coordinates
+https://api.anomoz.com/api/swift/post/get_robot_location.php
+
+#set robot coordinates
+https://api.anomoz.com/api/swift/post/set_robot_location.php?lat=12&lng=123
+
+#get distance to all starts
+https://api.anomoz.com/api/swift/post/get_distToAllStarts.php
+
+#set distance to all starts
+https://api.anomoz.com/api/swift/post/set_distToAllStarts.php?distToAllStarts=[123.23123,123123.323,123123.323,123123.323]
+
+

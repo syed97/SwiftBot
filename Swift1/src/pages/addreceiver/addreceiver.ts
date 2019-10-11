@@ -98,7 +98,7 @@ export class AddreceiverPage {
     console.log("dateTime", dateTime)
     //this.pservices.createBooking.timeAdded = dateTime;
     console.log("this.pservices.createBooking", this.pservices.createBooking)
-    this.InsertBookingToServer(this.pservices.createBooking)
+    //this.InsertBookingToServer(this.pservices.createBooking)
 
   }
   
