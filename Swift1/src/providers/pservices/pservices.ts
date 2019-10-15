@@ -185,8 +185,14 @@ export class PservicesProvider {
            for (var i=0; i<sampleTrans.length; i++){
             //check if hotel already
               var a = {
-                id: sampleTrans[i].id,
-                name: sampleTrans[i].name,
+                id: sampleTrans[i].bookingId,
+                toLocation: sampleTrans[i].toLocation,
+                fromLocation: sampleTrans[i].fromLocation,
+                toPerson: sampleTrans[i].toPerson,
+                fromPerson: sampleTrans[i].fromPerson,
+                date: sampleTrans[i].date,
+                time: sampleTrans[i].time,
+                status: sampleTrans[i].status,
             }
             _this.allBookingsTemp.push(a)
           	

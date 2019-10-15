@@ -1,7 +1,0 @@
-{
-  "name": "Swift",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}

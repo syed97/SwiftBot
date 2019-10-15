@@ -86,7 +86,8 @@ export class LoginPage implements OnInit {
        else{
         _this.hotelService.storeSignupData(dataParsed[0].name, email, password, dataParsed[0].userIdTag);
         //_this.nav.setRoot('page-hotel');  
-        _this.myApp.setRoot(); 
+        //_this.myApp.setRoot(); 
+        _this.nav.popToRoot();
         //console.log(sampleTrans)
            
           	
