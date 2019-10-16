@@ -150,7 +150,7 @@ export class PservicesProvider {
      InitiateGetTransactions(frameTransactions); //passing mycallback as a method 
   }
 
-  getallBookingsFromServer(){
+  getallBookingsFromServer(userIdTag){
     var InitiateGetTransactions = function(callback) // How can I use this callback?
      {
          var request = new XMLHttpRequest();
@@ -166,7 +166,7 @@ export class PservicesProvider {
              }
          }; 
          //console.log("sending _this.userIdTag to server", userIdTag)
-         request.open("POST", "https://api.anomoz.com/api/swift/post/read_all_locations.php");
+         request.open("POST", "https://api.anomoz.com/api/swift/post/read_all_user_bookings.php?userIdTag="+userIdTag);
          request.send();
      }
      
@@ -184,15 +184,16 @@ export class PservicesProvider {
            //console.log(sampleTrans)
            for (var i=0; i<sampleTrans.length; i++){
             //check if hotel already
+            var dateTime = new Date(sampleTrans[i].timeAdded * 1000);
               var a = {
                 id: sampleTrans[i].bookingId,
                 toLocation: sampleTrans[i].toLocation,
                 fromLocation: sampleTrans[i].fromLocation,
                 toPerson: sampleTrans[i].toPerson,
                 fromPerson: sampleTrans[i].fromPerson,
-                date: sampleTrans[i].date,
-                time: sampleTrans[i].time,
-                status: sampleTrans[i].status,
+                date: dateTime.getDay().toString() +"-"+ dateTime.getMonth().toString() +"-" +dateTime.getUTCFullYear(),
+                time: dateTime.getHours().toString() +":"+ dateTime.getMinutes().toString(),
+                status: sampleTrans[i].status
             }
             _this.allBookingsTemp.push(a)
           	
@@ -338,6 +339,32 @@ export class PservicesProvider {
 
   getAllBookings(){
     return this.allBookings;
+    /** 
+    return [
+              {
+                id: 2,
+                toLocation: "Cafe",
+                fromLocation: "Cafe2Go",
+                toPerson: "Hamza",
+                fromPerson: "Ahsan",
+                date: "12-2-2092",
+                timeStarted: "19:10",
+                timeReceived: "21:10",
+                status: "waiting",
+              },
+              {
+                id: 3,
+                toLocation: "C101",
+                fromLocation: "CS",
+                toPerson: "Osama",
+                fromPerson: "Ahsan",
+                date: "1-2-2022",
+                timeStarted: "15:10",
+                timeReceived: "16:10",
+                status: "completed",
+              },
+            ]
+            */
   }
   
 }

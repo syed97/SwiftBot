@@ -16,4 +16,5 @@ https://api.anomoz.com/api/swift/post/get_distToAllStarts.php
 #set distance to all starts
 https://api.anomoz.com/api/swift/post/set_distToAllStarts.php?distToAllStarts=[123.23123,123123.323,123123.323,123123.323]
 
-
+#read all user bookings
+https://api.anomoz.com/api/swift/post/read_all_user_bookings.php?userIdTag=1569409226832Dr.%20taj

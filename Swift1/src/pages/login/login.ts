@@ -101,7 +101,19 @@ export class LoginPage implements OnInit {
   }
 
   test(){
-    this.nav.push('addface');
+    this.showToast()
+  }
+
+  showToast(){
+    let toast = this.toastCtrl.create({
+      showCloseButton: true,
+      cssClass: 'profile-bg',
+      message: 'Booking Successfull!',
+      duration: 3000000,
+      position: 'bottom'
+    });
+    toast.present();
+    //this.navCtrl.popToRoot();
   }
 
 }

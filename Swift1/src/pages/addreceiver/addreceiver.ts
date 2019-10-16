@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import {PservicesProvider} from "../../providers/pservices/pservices";
 
 /**
@@ -24,7 +24,7 @@ export class AddreceiverPage {
   receiversCopy: any;
   selectedLocationId: any;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider, public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
@@ -50,7 +50,7 @@ export class AddreceiverPage {
     }, 500);
 
     setTimeout(function(){
-          _this2.updateData()
+      _this2.updateData()
     }, 900);
 
     setTimeout(function(){
@@ -73,7 +73,6 @@ export class AddreceiverPage {
   }
 
   resetChanges(){
-    //console.log("reset", this.receivers, this.receiversCopy)
     this.receivers = this.receiversCopy
   }
   
@@ -89,17 +88,11 @@ export class AddreceiverPage {
     this.selectedLocationId = location.id;
     document.getElementById("finalResultTextRec").innerHTML = "Send to "+ location.name;
     this.pservices.createBooking.receiverId = this.selectedLocationId;
-    //document.getElementById('finalResult').style.display = "block";
-    //this.navCtrl.push('addLocation');
   }
 
   send(){
-    var dateTime = (new Date().getTime() / 1000).toString();
-    console.log("dateTime", dateTime)
-    //this.pservices.createBooking.timeAdded = dateTime;
     console.log("this.pservices.createBooking", this.pservices.createBooking)
-    //this.InsertBookingToServer(this.pservices.createBooking)
-
+    this.InsertBookingToServer(this.pservices.createBooking)
   }
   
   InsertBookingToServer(aboutUser){
@@ -125,11 +118,22 @@ export class AddreceiverPage {
             console.log("Response received from server," , data)
             
             //redirect to home
-            //_this.nav.setRoot('page-home');
-            //_this.myApp.setRoot(); 
+            _this.showToast();
           }
 
           InitiateUploadUser(frameUploadUser); //passing mycallback as a method  
+  }
+
+  showToast(){
+    let toast = this.toastCtrl.create({
+      showCloseButton: true,
+      cssClass: 'profile-bg',
+      message: 'Booking Successfull!',
+      duration: 3000,
+      position: 'bottom'
+    });
+    toast.present();
+    this.navCtrl.popToRoot();
   }
 
 }

@@ -32,11 +32,9 @@ export class HistoryPage {
 
   ionViewWillLoad() {
     // set sample data
-    this.pservices.getallBookingsFromServer();
+    this.pservices.getallBookingsFromServer(this.pservices.userIdTag);
     console.log("ionViewWillLoad home")
     this.bookings = this.pservices.getAllBookings();
-    this.nPeople = "2";
-    this.resturantNameSearch = ""
     //Maintain a copy of data on which needs a search
     //this.bookingsCopy = this.bookings;
       
@@ -60,7 +58,7 @@ export class HistoryPage {
    }, 500);
 
    setTimeout(function(){
-         _this2.updateData1_4()
+      _this2.updateData1_4()
    }, 900);
 
    setTimeout(function(){
@@ -74,7 +72,6 @@ export class HistoryPage {
    setTimeout(function(){
      _this2.updateData1_4()
    }, 1500);
-
  }
 
  updateData1_4(){
@@ -82,17 +79,11 @@ export class HistoryPage {
    this.bookings = this.pservices.getAllBookings();
    this.bookingsCopy = this.bookings;
    //console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
-   
- }
-
- // view all bookings
- viewbookings() {
-   this.nav.push('view-booking');
  }
 
  viewBooking(booking){
    this.nav.push('delivery-details',{
-     'delId': booking.name
+     'booking': booking,
    });
  }
 

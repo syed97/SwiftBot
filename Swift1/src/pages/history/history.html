@@ -13,19 +13,17 @@
 <ion-content>
 
     <ion-grid class="list-bookings" no-padding>
-      <ion-row no-padding>
-        <ion-col tappable *ngFor="let booking of bookings" (click)="viewBooking(booking)">
+      <ion-row no-padding tappable *ngFor="let booking of bookings" (click)="viewBooking(booking)">
           <ion-card style="background-color: #e4e1ff;">
             <ion-card-header style="padding:0px; padding-left: 10px;">
               <ion-card-title color="primary" style="font-size: 16px;">
-                {{booking.name}}
+                {{booking.fromLocation}}
                 <ion-icon name="arrow-round-forward"  [style.color]="primary"></ion-icon>
-                Metro
+                {{booking.toLocation}}
               </ion-card-title>
               <p color="primary">25 mins ETA </p>
             </ion-card-header>
           </ion-card>    
-        </ion-col>
       </ion-row>
     </ion-grid>
 
