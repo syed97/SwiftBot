@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {PservicesProvider} from "../../providers/pservices/pservices";
-import { MyApp } from '../../app/app.component';
 
 /**
- * Generated class for the AddDefaultLocationPage page.
+ * Generated class for the AddmyaddressPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -26,14 +25,16 @@ export class AddDefaultLocationPage {
    selectedLocationId: any;
    
    
-  constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider, private MyApp: MyApp) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public pservices: PservicesProvider) {
   }
   
   ionViewDidLoad() {
       // set sample data
-      //this.locations = this.pservices.getAll();
+      this.pservices.getUsersFromServer();
+      this.locations = this.pservices.getAllLocations();
       this.locationNameSearch = ""
-       
+      this.selectedLocationId = null;
+
       var _this2 = this; 
       setTimeout(function(){
         _this2.updateData()
@@ -70,12 +71,12 @@ export class AddDefaultLocationPage {
     }
   
     updateData(){
-      //this.locations = this.pservices.getAll();
+      this.locations = this.pservices.getAllLocations();
       this.locationsCopy = this.locations;      
     }
   
     resetChanges(){
-      console.log("reset", this.locations, this.locationsCopy)
+      //console.log("reset", this.locations, this.locationsCopy)
       this.locations = this.locationsCopy
     }
     
@@ -87,25 +88,43 @@ export class AddDefaultLocationPage {
     } 
 
     viewlocation(location){
-      console.log('location', location)
-      this.selectedLocationId = location.name;
+      //console.log('location', location)
+      this.selectedLocationId = location.id;
       document.getElementById('finalResultText').innerText = location.name;
       document.getElementById('finalResult').style.display = "block";
       //this.navCtrl.push('addLocation');
     }
 
-    addNewLocation(){
-      console.log("addNewLocation")
-      this.navCtrl.push('newlocation')
-    }
 
     toDashboard(){
-      //this.navCtrl.setRoot('addreceiver');
-      //this.MyApp.setRoot()
-
-      this.navCtrl.popToRoot()
-      //this.navCtrl.setRoot(HomePage);
-      
+      var _this = this;
+           var InitiateUploadUser = function(callback) // How can I use this callback?
+            {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function()
+                {
+                    if (request.readyState == 4 && request.status == 200)
+                    {
+                        callback(request.responseText); // Another callback here
+                    }
+                    if (request.readyState == 4 && request.status == 0)
+                    {
+                        console.log("No Response") // Another callback here
+                    }
+                }; 
+                request.open("POST", "https://api.anomoz.com/api/swift/post/update_user_default_location.php?userIdTag="+_this.pservices.userIdTag+"&locationId="+_this.selectedLocationId)
+                request.send();
+            }
+            var frameUploadUser = function mycallback(data) {
+              console.log("data received from server," , data)              
+              //redirect to home
+              _this.navCtrl.popToRoot(); 
+            }
+  
+            InitiateUploadUser(frameUploadUser); //passing mycallback as a method  
     }
+
+
+   
     
 }
