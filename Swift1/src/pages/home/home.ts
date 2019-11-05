@@ -11,7 +11,6 @@ import { Storage } from '@ionic/storage';
 export class HomePage {
    // list of bookings
    public bookings: any;
-   nPeople: string;
    resturantNameSearch: string;
    bookingsCopy: any;
 
@@ -22,46 +21,44 @@ export class HomePage {
   ionViewWillLoad() {
        // set sample data
        //console.log("ionViewWillLoad home")
-       //this.pservices.getallBookingsFromServer()
-       this.bookings = this.pservices.getAllLocations();
-       this.nPeople = "2";
+       this.pservices.getallBookingsFromServer(this.pservices.userIdTag)
+       this.bookings = this.pservices.getAllBookings();
        this.resturantNameSearch = ""
-       //Maintain a copy of data on which needs a search
-       //this.bookingsCopy = this.bookings;
+
+       var _this2 = this; 
+       setInterval(function(){ _this2.fetchFromDB(); }, 5000);
          
-      // init map
-      // this.initializeMap();
       var _this2 = this; 
       setTimeout(function(){
-        _this2.updateData1_4()
+        _this2.updateData()
       }, 100);
   
       setTimeout(function(){
-        _this2.updateData1_4()
+        _this2.updateData()
       }, 200);  
   
       setTimeout(function(){
-        _this2.updateData1_4()
+        _this2.updateData()
       }, 300);
   
       setTimeout(function(){
-        _this2.updateData1_4()
+        _this2.updateData()
       }, 500);
   
       setTimeout(function(){
-            _this2.updateData1_4()
+            _this2.updateData()
       }, 900);
   
       setTimeout(function(){
-        _this2.updateData1_4()
+        _this2.updateData()
       }, 1100);
   
       setTimeout(function(){
-        _this2.updateData1_4()
+        _this2.updateData()
       }, 1300);
   
       setTimeout(function(){
-        _this2.updateData1_4()
+        _this2.updateData()
       }, 1500);
   
   
@@ -76,26 +73,20 @@ export class HomePage {
   
     }
   
-    updateData1_4(){
-      ////console.log("bookings data", this.bookings);
+    updateData(){
       this.bookings = this.pservices.getOnGoingDeliveries();
-      this.bookingsCopy = this.bookings;
-      ////console.log("this.pservices.getAcountStatus()", this.pservices.getAcountStatus())
-      
+      this.bookingsCopy = this.bookings;      
     }
    
-    // view all bookings
     viewbookings() {
       this.nav.push('view-booking');
     }
 
     resetChanges(){
-      //console.log("reset", this.bookings, this.bookingsCopy)
       this.bookings = this.bookingsCopy
     }
     
     searchResturants(){
-      ////console.log("keywords", this.resturantNameSearch)
       this.resetChanges();
       this.bookings = this.bookings.filter((item)=>{
         return item.name.toLowerCase().indexOf(this.resturantNameSearch.toLowerCase())>-1;
@@ -103,7 +94,6 @@ export class HomePage {
     }
 
     sendPackage(){
-      //console.log("viewClicked", screen)
       this.nav.push('addmyaddress');
     }
 
@@ -125,8 +115,13 @@ export class HomePage {
       this.nav.push('history');
     }
 
-    test(){
-      this.nav.push('addface');
+    fetchFromDB(){
+      //console.log("fetchFromDB")
+      this.pservices.getOngoingDeliveriesFromServer(this.pservices.userIdTag);
+      ;
+      if(JSON.stringify(this.bookings)!=JSON.stringify(this.pservices.getOnGoingDeliveries())){
+        this.bookings = this.pservices.getOnGoingDeliveries();
+        console.log("change detected")
+      }
     }
-
 }

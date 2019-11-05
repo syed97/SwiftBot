@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { App } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 /**
  * Generated class for the AboutPage page.
@@ -17,7 +19,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App, public storage : Storage) {
   }
 
   ionViewDidLoad() {
@@ -26,6 +28,12 @@ export class AboutPage {
 
   rate(){
     
+  }
+
+  logout(){
+    this.storage.set('userBasicInfo', null);
+    //this.navCtrl.setRoot("login")
+    this.app.getRootNav().setRoot('login');
   }
 
 }

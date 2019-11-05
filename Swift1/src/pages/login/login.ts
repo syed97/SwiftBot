@@ -4,13 +4,6 @@ import {IonicPage, NavController, AlertController, ToastController, MenuControll
 import {PservicesProvider} from "../../providers/pservices/pservices";
 import {MyApp} from "../../app/app.component";
 
-/**
- * Generated class for the LoginPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage({
   name: 'login',
 })
@@ -65,12 +58,8 @@ export class LoginPage implements OnInit {
              }
              if (request.readyState == 4 && request.status == 0)
              {
-                 //console.log("no response for resturants") // Another callback here
              }
          }; 
-         //console.log("sending _this.userIdTag to server", userIdTag)
-         console.log("sending request", "https://api.anomoz.com/api/vento/post/get_user.php?email="+email+"&password="+password);
-
          request.open("POST", "https://api.anomoz.com/api/swift/post/get_user.php?email="+email+"&password="+password);
          request.send();
      }
@@ -84,19 +73,10 @@ export class LoginPage implements OnInit {
          console.log("no user")
        }
        else{
-        _this.hotelService.storeSignupData(dataParsed[0].name, email, password, dataParsed[0].userIdTag);
-        //_this.nav.setRoot('page-hotel');  
-        //_this.myApp.setRoot(); 
-        _this.nav.popToRoot();
-        //console.log(sampleTrans)
-           
-          	
-          }
-          //add to local storage
-          //console.log("bookings storage updated", _this.bookings)
-          //_this.storage.set('resturants', _this.hotels);
+          _this.hotelService.storeSignupData(dataParsed[0].name, email, password, dataParsed[0].userIdTag);
+          _this.nav.popToRoot();  	
+        }
        }
-     
      InitiateGetTransactions(email, password, frameTransactions); //passing mycallback as a method 
   }
 

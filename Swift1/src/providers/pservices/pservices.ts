@@ -2,12 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
 
-/*
-  Generated class for the PservicesProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
 @Injectable()
 export class PservicesProvider {
 
@@ -20,7 +14,6 @@ export class PservicesProvider {
   allBookings: any;
   allBookingsTemp: any;
   
-
   account: any;
   name: string;
   email: string;
@@ -32,7 +25,6 @@ export class PservicesProvider {
 
  
   constructor(public storage: Storage) {
-    //this.hotels = HOTELS;
     /**
     this.hotels = 
     [
@@ -58,9 +50,7 @@ export class PservicesProvider {
     this.storage.get('userBasicInfo').then((val) => {
         console.log("account value found", val)
       if (val===null){
-        //console.log("no account found. Error!!!", val);
         this.account = null;
-        //this.setRoot('page-register');
       }
       else{
         this.account = val;
@@ -327,7 +317,6 @@ export class PservicesProvider {
       "address": ''    
     }
     // set a key/value
-    //console.log("storage updated to (signup):", tempInfo);
     this.account = tempInfo
     console.log("storing data", tempInfo)
     this.storage.set('userBasicInfo', tempInfo);
