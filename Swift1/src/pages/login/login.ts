@@ -74,7 +74,8 @@ export class LoginPage implements OnInit {
        }
        else{
           _this.hotelService.storeSignupData(dataParsed[0].name, email, password, dataParsed[0].userIdTag);
-          _this.nav.popToRoot();  	
+          _this.nav.popToRoot();  
+          console.log("ac",_this.nav.first()	)
         }
        }
      InitiateGetTransactions(email, password, frameTransactions); //passing mycallback as a method 

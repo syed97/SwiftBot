@@ -71,7 +71,7 @@ export class SignupPage implements OnInit {
 
   // go to login page
   login() {
-    this.app.getRootNav().setRoot('login');
+    this.nav.push('login');
   }
 
   uploadUserToDatabase(aboutUser){
@@ -88,7 +88,6 @@ export class SignupPage implements OnInit {
                   if (request.readyState == 4 && request.status == 0)
                   {
                       console.log("no respinse for creating account") // Another callback here
-                      //document.getElementById("noInternet").style.display = "block";
                   }
               }; 
               request.open("POST", "https://api.anomoz.com/api/swift/post/user_create.php")
@@ -98,7 +97,6 @@ export class SignupPage implements OnInit {
             console.log("user received from server," , data)
             
             _this.hotelService.storeSignupData(_this.name, _this.email, _this.password, _this.userIdTag);
-            //redirect to home
             _this.addFace(); 
           }
 

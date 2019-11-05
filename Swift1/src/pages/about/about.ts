@@ -32,8 +32,8 @@ export class AboutPage {
 
   logout(){
     this.storage.set('userBasicInfo', null);
-    //this.navCtrl.setRoot("login")
-    this.app.getRootNav().setRoot('login');
+    this.navCtrl.push("login")
+    //this.app.getRootNav().setRoot('login');
   }
 
 }

@@ -18,6 +18,19 @@ export class HomePage {
    
   }
 
+  ionViewWillEnter() {
+    console.log("ionViewWillEnter")
+    this.storage.get('userBasicInfo').then((val) => {
+      //console.log("account value found", val)
+      if (val===null){
+        //console.log("no account found. Error!!!", val);
+        this.nav.push('signup');
+      }
+    
+      });
+
+  }
+
   ionViewWillLoad() {
        // set sample data
        //console.log("ionViewWillLoad home")
@@ -103,7 +116,7 @@ export class HomePage {
   
     viewBooking(booking){
       this.nav.push('delivery-details',{
-        'delId': booking.name
+        'booking': booking,
       });
     }
 
