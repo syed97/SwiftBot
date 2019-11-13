@@ -133,6 +133,7 @@ export class AddreceiverPage {
       position: 'bottom'
     });
     toast.present();
+    this.pservices.getOngoingDeliveriesFromServer(this.pservices.userIdTag)
     this.navCtrl.popToRoot();
   }
 

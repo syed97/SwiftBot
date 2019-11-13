@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "908797994486",
+    "firebase_url": "https://swiftbot-fyp.firebaseio.com",
+    "project_id": "swiftbot-fyp",
+    "storage_bucket": "swiftbot-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908797994486:android:290593ded32658014313d7",
+        "android_client_info": {
+          "package_name": "com.anomoz.swiftbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908797994486-pf5j4gqe8m7tq1npk9qrdhadkrkr00u7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA19T5X7VjzfE1HjnVFCZ2rnXJXLzHG6Zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908797994486-pf5j4gqe8m7tq1npk9qrdhadkrkr00u7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

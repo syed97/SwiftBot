@@ -229,11 +229,16 @@ export class PservicesProvider {
            //console.log(sampleTrans)
            for (var i=0; i<sampleTrans.length; i++){
             //check if hotel already
+            var dateTime = new Date(sampleTrans[i].timeAdded * 1000);
               var a = {
                 id: sampleTrans[i].bookingId,
                 toLocation: sampleTrans[i].toLocation,
                 fromLocation: sampleTrans[i].fromLocation,
-                status: sampleTrans[i].status,
+                toPerson: sampleTrans[i].toPerson,
+                fromPerson: sampleTrans[i].fromPerson,
+                date: dateTime.getDay().toString() +"-"+ dateTime.getMonth().toString() +"-" +dateTime.getUTCFullYear(),
+                time: dateTime.getHours().toString() +":"+ dateTime.getMinutes().toString(),
+                status: sampleTrans[i].status
             }
             _this.onGoingDeliveriesTemp.push(a)
           	

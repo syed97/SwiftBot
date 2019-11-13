@@ -28,7 +28,7 @@ export class HomePage {
       }
     
       });
-
+      this.bookings = this.pservices.getOnGoingDeliveries();
   }
 
   ionViewWillLoad() {
@@ -115,6 +115,7 @@ export class HomePage {
     }
   
     viewBooking(booking){
+      console.log("pusing", booking)
       this.nav.push('delivery-details',{
         'booking': booking,
       });
