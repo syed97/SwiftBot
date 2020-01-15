@@ -1,0 +1,14 @@
+[13-Sep-2019 17:30:02 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/users.php on line 18
+[13-Sep-2019 17:30:02 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/users.php on line 18
+[13-Sep-2019 17:30:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/users.php on line 18
+[13-Sep-2019 17:31:33 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/users.php on line 18
+[13-Sep-2019 17:32:04 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/users.php on line 18
+[13-Sep-2019 17:32:34 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/vendors.php on line 18
+[13-Sep-2019 17:32:48 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/vendors.php on line 18
+[13-Sep-2019 17:33:37 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/vento/dataDownload/vendors.php on line 18
+[09-Oct-2019 12:18:27 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/swift/dataDownload/users.php on line 18
+[09-Oct-2019 14:57:14 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/swift/dataDownload/users.php on line 18
+[22-Oct-2019 05:50:28 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/swift/dataDownload/users.php on line 18
+[22-Oct-2019 05:54:09 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/swift/dataDownload/users.php on line 18
+[22-Oct-2019 05:54:49 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/swift/dataDownload/users.php on line 18
+[22-Oct-2019 05:57:29 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/anomozco/projects.anomoz.com/swift/dataDownload/users.php on line 18

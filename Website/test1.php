@@ -46,7 +46,7 @@
  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
 <script>
-    var imageUrl = 'http://res.freestockphotos.biz/pictures/5/5695-an-autumn-landscape-with-green-grass-pv.jpg';
+    var imageUrl = './assets/map.png';
 var imageWidth = 654;
 var imageHeight = 435;
 
@@ -54,11 +54,12 @@ var map = setupMap();
 var markers = setupImport(map);
 setupItems(map, markers);
 setupExport(markers);
+setupPointerOnMap();
 
 function setupMap() {
     var map = L.map('map', {
         minZoom: 1,
-        maxZoom: 5,
+        maxZoom: 8,
         center: [0, 0],
         zoom: 5,
         crs: L.CRS.Simple
@@ -77,6 +78,7 @@ function addItem(map, markers, item) {
     var options = {draggable: true};
     var marker = L.marker(position, options).addTo(map).bindPopup(name);
     marker.name = name;
+    marker.title(name);
     markers.push(marker);
 }
 function setupItems(map, markers) {
@@ -114,7 +116,7 @@ function setupImport(map) {
     
     $('.import').click(function () {
         var json = $('#data').val();
-        var result = JSON.parse(json);
+        var result = [{"name":"Item 4","position":{"lat":-3.53125,"lng":5.137499809265137}}];
         
         if (result && $.isArray(result)) {
             for (var i = 0; i < result.length; i++) {
@@ -124,5 +126,15 @@ function setupImport(map) {
     });
     
     return markers;
+}
+
+function setupPointerOnMap(){
+    var result = [{"name":"Item 4","position":{"lat":-3.53125,"lng":5.137499809265137}}];
+        
+        if (result && $.isArray(result)) {
+            for (var i = 0; i < result.length; i++) {
+                addItem(map, markers, result[i]);
+            }
+        }
 }
 </script>
