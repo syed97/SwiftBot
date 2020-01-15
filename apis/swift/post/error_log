@@ -1,0 +1,977 @@
+[11-Sep-2019 07:04:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 21
+[11-Sep-2019 07:04:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 22
+[11-Sep-2019 07:04:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 23
+[11-Sep-2019 07:04:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 24
+[11-Sep-2019 07:04:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 25
+[13-Sep-2019 13:13:51 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 21
+[13-Sep-2019 13:13:51 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 22
+[13-Sep-2019 13:13:51 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 23
+[13-Sep-2019 13:13:51 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 24
+[13-Sep-2019 13:13:51 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 25
+[13-Sep-2019 13:13:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:30
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/post/user_create.php(30): Post->create_user()
+#1 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 30
+[13-Sep-2019 16:24:38 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 21
+[13-Sep-2019 16:24:38 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 22
+[13-Sep-2019 16:24:38 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 23
+[13-Sep-2019 16:24:38 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 24
+[13-Sep-2019 16:24:38 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 25
+[13-Sep-2019 16:24:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'phoneNumber' in 'field list' in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:47
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(47): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 47
+[13-Sep-2019 16:24:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 21
+[13-Sep-2019 16:24:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 22
+[13-Sep-2019 16:24:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 23
+[13-Sep-2019 16:24:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 24
+[13-Sep-2019 16:24:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 25
+[13-Sep-2019 16:24:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'phoneNumber' in 'field list' in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:47
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(47): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 47
+[13-Sep-2019 16:29:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 21
+[13-Sep-2019 16:29:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 22
+[13-Sep-2019 16:29:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 23
+[13-Sep-2019 16:29:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 24
+[13-Sep-2019 16:29:49 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/user_create.php on line 25
+[13-Sep-2019 17:46:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 360
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Undefined variable: cartId in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Undefined variable: nPeople in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Undefined variable: timeDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Undefined variable: userIdTag in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Undefined variable: description in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 17:54:13 UTC] PHP Notice:  Undefined variable: dateDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Undefined variable: cartId in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Undefined variable: title in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Undefined variable: nPeople in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Undefined variable: timeDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Undefined variable: userIdTag in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Undefined variable: description in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Notice:  Undefined variable: dateDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:06:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'title' in 'field list' in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking(NULL)
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Undefined variable: cartId in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Undefined variable: title in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Undefined variable: nPeople in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Undefined variable: timeDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Undefined variable: userIdTag in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Undefined variable: description in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:07:33 UTC] PHP Notice:  Undefined variable: dateDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Undefined variable: cartId in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Undefined variable: title in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Undefined variable: nPeople in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Undefined variable: timeDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Undefined variable: userIdTag in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Undefined variable: description in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[13-Sep-2019 18:08:08 UTC] PHP Notice:  Undefined variable: dateDue in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 361
+[14-Sep-2019 14:23:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:23:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:23:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:23:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:23:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:23:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:23:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:23:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking(Array)
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:24:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:24:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:24:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:24:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:24:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:24:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:24:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:24:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking(NULL)
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:28:20 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:28:20 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:28:20 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:28:20 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:28:20 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:28:20 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:28:20 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:28:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking(NULL)
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:29:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:29:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:29:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:29:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:29:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:29:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:29:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:31:11 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:31:11 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:31:11 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:31:11 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:31:11 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:31:11 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:31:11 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:32:07 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:32:07 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:32:07 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:32:07 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:32:07 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:32:07 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:32:07 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:34:23 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:34:23 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:34:23 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:34:23 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:34:23 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:34:23 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:34:23 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:34:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:34:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:34:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:34:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:34:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:34:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:34:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:37:02 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:43:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:43:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:43:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:43:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:43:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:43:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:43:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:46:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:46:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:46:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:46:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:46:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:46:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:46:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:46:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:46:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:46:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:46:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:46:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:46:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:46:46 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:46:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:46:57 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:46:57 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:46:57 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:46:57 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:46:57 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:46:57 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:46:57 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:46:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:47:12 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:47:12 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:47:12 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:47:12 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:47:12 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:47:12 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:47:12 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:47:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:47:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:47:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:47:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:47:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:47:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:47:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:47:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:48:47 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:48:47 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:48:47 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:48:47 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:48:47 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:48:47 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:48:47 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:48:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:48:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:48:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:48:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:48:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:48:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:48:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:48:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:48:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:49:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:49:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:49:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:49:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:49:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:49:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:49:08 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:49:08 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:49:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:49:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:49:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:49:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:49:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:49:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:49:22 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:50:27 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:50:27 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:50:27 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:50:27 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:50:27 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:50:27 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:50:27 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:50:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:52:43 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:52:43 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:52:43 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:52:43 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:52:43 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:52:43 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:52:43 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:52:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:385
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(385): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 385
+[14-Sep-2019 14:52:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:52:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:52:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:52:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:52:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:52:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:52:53 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:58:04 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:58:04 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:58:04 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:58:04 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:58:04 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:58:04 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:58:04 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:58:16 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:58:16 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:58:16 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:58:16 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:58:16 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:58:16 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:58:16 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:58:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:384
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(384): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 384
+[14-Sep-2019 14:59:15 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:59:15 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:59:15 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:59:15 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:59:15 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:59:15 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:59:15 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:59:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:384
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(384): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 384
+[14-Sep-2019 14:59:25 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:59:25 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:59:25 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:59:25 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:59:25 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:59:25 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:59:25 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 14:59:25 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:384
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(384): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 384
+[14-Sep-2019 14:59:30 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 14:59:30 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 14:59:30 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 14:59:30 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 14:59:30 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 14:59:30 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 14:59:30 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 15:00:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 15:00:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 15:00:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 15:00:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 15:00:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 15:00:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 15:00:09 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 15:00:09 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:384
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(384): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 384
+[14-Sep-2019 15:00:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 15:00:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 15:00:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 15:00:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 15:00:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 15:00:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 15:00:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 15:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 15:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 15:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 15:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 15:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 15:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 15:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 15:03:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 15:03:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 15:03:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 15:03:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 15:03:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 15:03:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 15:03:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 15:03:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php:384
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/vento/models/appPost.php(384): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php(31): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/vento/models/appPost.php on line 384
+[14-Sep-2019 15:04:39 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 15:04:39 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 15:04:39 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 15:04:39 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 15:04:39 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 15:04:39 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 15:04:39 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[14-Sep-2019 15:06:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 21
+[14-Sep-2019 15:06:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 22
+[14-Sep-2019 15:06:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 23
+[14-Sep-2019 15:06:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 24
+[14-Sep-2019 15:06:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 25
+[14-Sep-2019 15:06:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 26
+[14-Sep-2019 15:06:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/vento/post/insert_booking.php on line 27
+[18-Sep-2019 05:51:21 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[25-Sep-2019 10:47:21 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[25-Sep-2019 11:00:27 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 10:17:41 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 10:45:33 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 10:47:10 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 11:12:39 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 11:14:18 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 11:16:39 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 11:19:25 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[27-Sep-2019 11:20:53 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[07-Oct-2019 06:09:59 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[07-Oct-2019 07:17:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 21
+[07-Oct-2019 07:17:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 22
+[07-Oct-2019 07:17:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 23
+[07-Oct-2019 07:17:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[07-Oct-2019 07:17:50 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 25
+[07-Oct-2019 07:17:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:378
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(378): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php(28): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 378
+[07-Oct-2019 07:19:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 23
+[07-Oct-2019 07:19:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[07-Oct-2019 07:19:18 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 25
+[07-Oct-2019 07:26:51 UTC] PHP Notice:  Undefined property: stdClass::$senderLocationId in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[07-Oct-2019 07:26:51 UTC] PHP Notice:  Undefined property: stdClass::$receiverId in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 25
+[07-Oct-2019 07:28:00 UTC] PHP Notice:  Undefined property: stdClass::$senderLocationId in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[07-Oct-2019 10:39:23 UTC] PHP Notice:  Undefined property: stdClass::$senderLocationId in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[07-Oct-2019 10:46:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 23
+[07-Oct-2019 10:46:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[07-Oct-2019 10:46:24 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 25
+[07-Oct-2019 10:55:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'anomozco_wp585.swift_bookings' doesn't exist in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:114
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(114): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php(22): Post->read_ongoing_bookings_of_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 114
+[07-Oct-2019 11:04:32 UTC] PHP Notice:  Undefined property: stdClass::$senderLocationId in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[09-Oct-2019 08:04:35 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[09-Oct-2019 10:44:55 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[11-Oct-2019 11:34:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Post::set_distToAllStarts() in /home/anomozco/api.anomoz.com/api/swift/post/set_distToAllStarts.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/post/set_distToAllStarts.php on line 25
+[11-Oct-2019 11:34:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Post::set_distToAllStarts() in /home/anomozco/api.anomoz.com/api/swift/post/set_distToAllStarts.php:25
+Stack trace:
+#0 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/post/set_distToAllStarts.php on line 25
+[15-Oct-2019 05:01:00 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 23
+[15-Oct-2019 05:01:00 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[15-Oct-2019 05:01:00 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 25
+[15-Oct-2019 12:44:11 UTC] PHP Notice:  Undefined variable: bookingId in /home/anomozco/api.anomoz.com/api/swift/post/read_all_user_bookings.php on line 33
+[15-Oct-2019 12:44:11 UTC] PHP Notice:  Undefined variable: bookingId in /home/anomozco/api.anomoz.com/api/swift/post/read_all_user_bookings.php on line 33
+[16-Oct-2019 08:09:02 UTC] PHP Notice:  Undefined variable: bookingId in /home/anomozco/api.anomoz.com/api/swift/post/read_all_user_bookings.php on line 33
+[16-Oct-2019 08:09:02 UTC] PHP Notice:  Undefined variable: bookingId in /home/anomozco/api.anomoz.com/api/swift/post/read_all_user_bookings.php on line 33
+[01-Nov-2019 06:44:29 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:44:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'locationId' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:45
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(45): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 45
+[01-Nov-2019 06:44:32 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:44:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'locationId' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:45
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(45): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 45
+[01-Nov-2019 06:51:04 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:51:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'locationId' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:45
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(45): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 45
+[01-Nov-2019 06:51:17 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 21
+[01-Nov-2019 06:51:17 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 22
+[01-Nov-2019 06:51:17 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 23
+[01-Nov-2019 06:51:17 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:51:17 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 25
+[01-Nov-2019 06:51:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'locationId' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:45
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(45): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 45
+[01-Nov-2019 06:51:58 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 21
+[01-Nov-2019 06:51:58 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 22
+[01-Nov-2019 06:51:58 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 23
+[01-Nov-2019 06:51:58 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:51:58 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 25
+[01-Nov-2019 06:51:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'locationId' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:45
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(45): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 45
+[01-Nov-2019 06:52:03 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 21
+[01-Nov-2019 06:52:03 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 22
+[01-Nov-2019 06:52:03 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 23
+[01-Nov-2019 06:52:03 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:52:03 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 25
+[01-Nov-2019 06:52:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'locationId' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:45
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(45): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/user_create.php(30): Post->create_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 45
+[01-Nov-2019 06:56:29 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 21
+[01-Nov-2019 06:56:29 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 22
+[01-Nov-2019 06:56:29 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 23
+[01-Nov-2019 06:56:29 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:56:29 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 25
+[01-Nov-2019 06:57:10 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[01-Nov-2019 06:59:12 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[04-Nov-2019 08:14:12 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'timeToReach' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:233
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(233): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php(28): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 233
+[04-Nov-2019 08:14:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 23
+[04-Nov-2019 08:14:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[04-Nov-2019 08:14:21 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 25
+[04-Nov-2019 08:14:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'timeToReach' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:233
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(233): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php(28): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 233
+[05-Nov-2019 05:09:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'timeToReach' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:233
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(233): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php(28): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 233
+[05-Nov-2019 05:09:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 23
+[05-Nov-2019 05:09:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 24
+[05-Nov-2019 05:09:55 UTC] PHP Notice:  Trying to get property of non-object in /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php on line 25
+[05-Nov-2019 05:09:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'timeToReach' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:233
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(233): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php(28): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 233
+[05-Nov-2019 05:19:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'rank' doesn't have a default value in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:233
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(233): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/insert_booking.php(28): Post->insert_booking()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 233
+[05-Nov-2019 06:22:17 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[05-Nov-2019 06:43:46 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[05-Nov-2019 11:05:27 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[05-Nov-2019 11:10:51 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[06-Nov-2019 10:43:22 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[06-Nov-2019 10:44:28 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[06-Nov-2019 18:37:58 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:01 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:06 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:11 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:16 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:21 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:26 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:36 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:41 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:46 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:51 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:18:56 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:02 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:07 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:12 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:17 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:22 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:27 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: senderName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 37
+[12-Nov-2019 07:19:32 UTC] PHP Notice:  Undefined variable: receiverName in /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php on line 38
+[12-Nov-2019 07:19:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and b.status!='completed' AS toLocation
+INNER JOIN swift_users u1 ON u1.userIdTa' at line 21 in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:150
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(150): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php(22): Post->read_ongoing_bookings_of_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 150
+[12-Nov-2019 07:19:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and b.status!='completed' AS toLocation
+INNER JOIN swift_users u1 ON u1.userIdTa' at line 21 in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:150
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(150): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php(22): Post->read_ongoing_bookings_of_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 150
+[12-Nov-2019 07:19:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and b.status!='completed' AS toLocation
+INNER JOIN swift_users u1 ON u1.userIdTa' at line 21 in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:150
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(150): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php(22): Post->read_ongoing_bookings_of_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 150
+[12-Nov-2019 07:19:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and b.status!='completed' AS toLocation
+INNER JOIN swift_users u1 ON u1.userIdTa' at line 21 in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:150
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(150): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php(22): Post->read_ongoing_bookings_of_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 150
+[12-Nov-2019 07:19:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'and b.status!='completed' AS toLocation
+INNER JOIN swift_users u1 ON u1.userIdTa' at line 21 in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php:150
+Stack trace:
+#0 /home/anomozco/api.anomoz.com/api/swift/models/appPost.php(150): PDOStatement->execute()
+#1 /home/anomozco/api.anomoz.com/api/swift/post/read_ongoing_bookings_of_user.php(22): Post->read_ongoing_bookings_of_user()
+#2 {main}
+  thrown in /home/anomozco/api.anomoz.com/api/swift/models/appPost.php on line 150
+[27-Nov-2019 09:46:55 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
+[10-Dec-2019 07:30:48 UTC] PHP Notice:  Undefined property: stdClass::$phoneNumber in /home/anomozco/api.anomoz.com/api/swift/post/user_create.php on line 24
