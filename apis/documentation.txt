@@ -1,0 +1,1 @@
+https://api.anomoz.com/api/swift/post/read_new_booking.php?currentBookingId=193
