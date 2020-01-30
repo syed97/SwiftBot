@@ -47,4 +47,10 @@ export class DeliveryDetailsPage {
     console.log('ionViewDidLoad DeliveryDetailsPage');
   }
 
+  unlockContainer(){
+    this.navCtrl.push('authenticate',{
+      'bookingId':this.id
+    })
+  }
+
 }

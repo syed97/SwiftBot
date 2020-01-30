@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Open Lock</ion-title>
+  </ion-navbar>
+</ion-header>
+<!-- -->
+<ion-content padding class="animated fadeIn login auth-page" style="background-color: #eaf2e3;">
+  <div class="login-content">
+    
+    <!-- Login form -->
+    <form [formGroup]="onLoginForm" class="list-form">
+
+      <ion-item style="background-color: #eaf2e3;">
+        <ion-label floating>
+          <ion-icon name="lock" item-start class="text-white"></ion-icon>
+          Password
+        </ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </form>
+
+    <br>
+      <div style="margin: 10px;">
+      <button ion-button icon-start block color="primary" tappable (click)="login(onLoginForm.get('password').value)" [disabled]="!onLoginForm.valid">
+          Open Lock
+        </button>
+        </div>
+
+  </div>
+</ion-content>
