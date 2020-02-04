@@ -1,15 +1,18 @@
 #include <iostream> 
 using namespace std; 
   
-int main(int argc,char* argv[]) 
+int main(int argc,char** argv) 
 { 
-	printf("Program Name Is: %s",argv[0]); 
+
+	cout << "--NAVIGATOR LAUNCHED--" << "\n"; 
+    cout << "Start Coordinates: " << argv[1] << " , "  << argv[2] << "\n"; 
+    cout << "End Coordinates: " << argv[3] << " , "  << argv[4] << "\n"; 
+
+    // for testing
+    
+    int x; 
+	cin >> x; 
 	
-    cout << "You have entered " << argc 
-         << " arguments:" << "\n"; 
-  
-    for (int i = 0; i < argc; ++i) 
-        cout << argv[i] << "\n"; 
   
     return 0; 
 } 
