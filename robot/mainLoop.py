@@ -1,7 +1,9 @@
 import requests
 import json, os
 
-
+currentBookingInfo = "";
+currentLocation = [1,1];
+ 
 def getNextBookingDetails(currentBookingId):
     URL = "http://ventoms.com/anomoz/swift/post/read_new_booking.php?currentBookingId="+str(currentBookingId)
     r = requests.get(url = URL) 
@@ -31,10 +33,8 @@ def generateExe():
     else:
         print ("exe compiling Failed")
 
-def runSingleCycle(currentBookingInfo, currentLocation):
-    global currentBookingInfo
-    global currentLocation
-
+def runSingleCycle():
+    
     currentBookingInfo = getNextBookingDetails(0)
     #currentBookingInfo = {'bookingId': '187', 'timeAdded': '1573634449', 'fromLocation': 'Auditorium', 'toLocation': 'Auditorium', 'fromPerson': 'Dr. taj', 'toPerson': 'Dddx', 'status': 'waiting', 'fromLocation_lat': '-9.656250', 'fromLocation_lng': '5.750000', 'toLocation_lat': '-9.656250', 'toLocation_lng': '5.750000'}
     print("currentBookingInfo updated: ", currentBookingInfo)
@@ -44,22 +44,23 @@ def runSingleCycle(currentBookingInfo, currentLocation):
     startNavigator(currentLocation, pickupLocation) #program stops until
 
     #open lock for pickup
-    
+        
     
     #to to destination
     dropoffLocation = getFinalLocation(currentBookingInfo)
     startNavigator(currentLocation, dropoffLocation)
 
     #openlock for dropoff
+
+    return [currentBookingInfo, currentLocation]
     
     
 def main():
     generateExe()
 
-    currentBookingInfo = "";
-    currentLocation = [1,1];
-
-    runSingleCycle(currentBookingInfo, currentLocation)
+    bothvar = runSingleCycle()
+    currentBookingInfo = bothvar[0]
+    currentLocation = bothvar[1]
     
         
     
