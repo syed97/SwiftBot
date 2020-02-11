@@ -1,0 +1,7 @@
+# ninja log v5
+0	30050	0	CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o	27d9586832143b35
+30052	30950	0	/home/ubuntu/catkin_ws/devel_isolated/swift_setup_tf/lib/swift_setup_tf/tf_broadcaster	7c254beb2185c02
+1	34319	0	CMakeFiles/tf_listener.dir/src/tf_listener.cpp.o	fd3288be4c7233d3
+34319	35260	0	/home/ubuntu/catkin_ws/devel_isolated/swift_setup_tf/lib/swift_setup_tf/tf_listener	57dc89a549023c59
+2	66	0	CMakeFiles/install.util	d6bab75b96d4b3d
+2	74	0	CMakeFiles/install.util	d6bab75b96d4b3d

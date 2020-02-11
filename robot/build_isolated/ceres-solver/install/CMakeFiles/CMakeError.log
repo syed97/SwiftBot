@@ -1,0 +1,600 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_1ad72"
+[1/2] Building C object CMakeFiles/cmTC_1ad72.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1ad72
+FAILED: : && /usr/bin/cc     CMakeFiles/cmTC_1ad72.dir/CheckSymbolExists.c.o  -o cmTC_1ad72  -rdynamic && :
+CMakeFiles/cmTC_1ad72.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0xe): undefined reference to `pthread_create'
+CheckSymbolExists.c:(.text+0x12): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_d1012"
+[1/2] Building C object CMakeFiles/cmTC_d1012.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d1012
+FAILED: : && /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_d1012.dir/CheckFunctionExists.c.o  -o cmTC_d1012  -rdynamic -lpthreads && :
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_df85f"
+[1/2] Building CXX object CMakeFiles/cmTC_df85f.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_df85f.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_25647"
+[1/2] Building CXX object CMakeFiles/cmTC_25647.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_25647.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_b6dba"
+[1/2] Building CXX object CMakeFiles/cmTC_b6dba.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_b6dba.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_89f0c"
+[1/2] Building CXX object CMakeFiles/cmTC_89f0c.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_89f0c.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_69831"
+[1/2] Building CXX object CMakeFiles/cmTC_69831.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_69831.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_b5cc9"
+[1/2] Building CXX object CMakeFiles/cmTC_b5cc9.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_b5cc9.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_a2954"
+[1/2] Building CXX object CMakeFiles/cmTC_a2954.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_a2954.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_210e5"
+[1/2] Building CXX object CMakeFiles/cmTC_210e5.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_210e5.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_9c302"
+[1/2] Building CXX object CMakeFiles/cmTC_9c302.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_9c302.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_0e0c3"
+[1/2] Building CXX object CMakeFiles/cmTC_0e0c3.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_0e0c3.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_dd156"
+[1/2] Building CXX object CMakeFiles/cmTC_dd156.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_dd156.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_f0dc8"
+[1/2] Building CXX object CMakeFiles/cmTC_f0dc8.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_f0dc8.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_8c5ae"
+[1/2] Building CXX object CMakeFiles/cmTC_8c5ae.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_8c5ae.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_ca9ab"
+[1/2] Building CXX object CMakeFiles/cmTC_ca9ab.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_ca9ab.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_87fa1"
+[1/2] Building CXX object CMakeFiles/cmTC_87fa1.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_87fa1.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_ce279"
+[1/2] Building CXX object CMakeFiles/cmTC_ce279.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_ce279.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_3dbe8"
+[1/2] Building CXX object CMakeFiles/cmTC_3dbe8.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_3dbe8.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_7f48e"
+[1/2] Building CXX object CMakeFiles/cmTC_7f48e.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_7f48e.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_4616d"
+[1/2] Building CXX object CMakeFiles/cmTC_4616d.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_4616d.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_8cd83"
+[1/2] Building CXX object CMakeFiles/cmTC_8cd83.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_8cd83.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_64b02"
+[1/2] Building CXX object CMakeFiles/cmTC_64b02.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_64b02.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_8e3e9"
+[1/2] Building CXX object CMakeFiles/cmTC_8e3e9.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_8e3e9.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_83781"
+[1/2] Building CXX object CMakeFiles/cmTC_83781.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_83781.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_06939"
+[1/2] Building CXX object CMakeFiles/cmTC_06939.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_06939.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_7c38c"
+[1/2] Building CXX object CMakeFiles/cmTC_7c38c.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_7c38c.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_d7f3f"
+[1/2] Building CXX object CMakeFiles/cmTC_d7f3f.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_d7f3f.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_06710"
+[1/2] Building CXX object CMakeFiles/cmTC_06710.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_06710.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_6b76e"
+[1/2] Building CXX object CMakeFiles/cmTC_6b76e.dir/CheckIncludeFile.cxx.o
+FAILED: /usr/bin/c++     -fopenmp  -fopenmp -o CMakeFiles/cmTC_6b76e.dir/CheckIncludeFile.cxx.o -c CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+ninja: build stopped: subcommand failed.
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_323cc"
+[1/2] Building CXX object CMakeFiles/cmTC_323cc.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_323cc.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/ubuntu/catkin_ws/build_isolated/ceres-solver/install/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/ninja" "cmTC_3a63f"
+[1/2] Building CXX object CMakeFiles/cmTC_3a63f.dir/src.cxx.o
+FAILED: /usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp -o CMakeFiles/cmTC_3a63f.dir/src.cxx.o -c src.cxx
+src.cxx: In function ‘int main()’:
+src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+ninja: build stopped: subcommand failed.
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }

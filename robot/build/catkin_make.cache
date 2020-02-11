@@ -1,0 +1,2 @@
+simple_navigation_goals
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/catkin_ws/install -DCATKIN_WHITELIST_PACKAGES=simple_navigation_goals -G Unix Makefiles

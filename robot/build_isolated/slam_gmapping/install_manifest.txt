@@ -1,0 +1,10 @@
+/home/ubuntu/catkin_ws/install_isolated/_setup_util.py
+/home/ubuntu/catkin_ws/install_isolated/env.sh
+/home/ubuntu/catkin_ws/install_isolated/setup.bash
+/home/ubuntu/catkin_ws/install_isolated/local_setup.bash
+/home/ubuntu/catkin_ws/install_isolated/setup.sh
+/home/ubuntu/catkin_ws/install_isolated/local_setup.sh
+/home/ubuntu/catkin_ws/install_isolated/setup.zsh
+/home/ubuntu/catkin_ws/install_isolated/local_setup.zsh
+/home/ubuntu/catkin_ws/install_isolated/.rosinstall
+/home/ubuntu/catkin_ws/install_isolated/share/slam_gmapping/package.xml

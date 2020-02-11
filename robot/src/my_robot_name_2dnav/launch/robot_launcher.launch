@@ -1,0 +1,8 @@
+<launch>
+	<arg name="robotname" default="bot1"/>
+		<group ns="$(arg robotname)">
+			<include file="$(find my_robot_name_2dnav)/launch/my_robot_configuration.launch">
+				<arg name="namespace" value="$(arg robotname)"/>
+			</include>
+		</group>
+</launch>

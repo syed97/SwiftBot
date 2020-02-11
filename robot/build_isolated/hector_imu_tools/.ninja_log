@@ -1,0 +1,7 @@
+# ninja log v5
+0	59252	0	CMakeFiles/pose_and_orientation_to_imu_node.dir/src/pose_and_orientation_to_imu_node.cpp.o	e37848ef7a809eae
+59257	60839	0	/home/ubuntu/catkin_ws/devel_isolated/hector_imu_tools/lib/hector_imu_tools/pose_and_orientation_to_imu_node	1a6a0d1e7b1d919d
+2	145	0	CMakeFiles/install.util	104c826e32b1d61c
+2	82	0	CMakeFiles/install.util	104c826e32b1d61c
+4	103	0	CMakeFiles/install.util	104c826e32b1d61c
+2	75	0	CMakeFiles/install.util	104c826e32b1d61c

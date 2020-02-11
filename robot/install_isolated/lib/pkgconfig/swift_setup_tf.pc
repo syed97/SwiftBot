@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/install_isolated
+
+Name: swift_setup_tf
+Description: Description of swift_setup_tf
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/ubuntu/catkin_ws/install_isolated/lib 
+Requires: 

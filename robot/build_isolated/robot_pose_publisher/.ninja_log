@@ -1,0 +1,5 @@
+# ninja log v5
+0	35463	0	CMakeFiles/robot_pose_publisher.dir/src/robot_pose_publisher.cpp.o	ec1b3773818ff073
+35467	36818	0	/home/ubuntu/catkin_ws/devel_isolated/robot_pose_publisher/lib/robot_pose_publisher/robot_pose_publisher	24fad94d33dc3aec
+2	70	0	CMakeFiles/install.util	f714ae75d067885e
+2	83	0	CMakeFiles/install.util	f714ae75d067885e
