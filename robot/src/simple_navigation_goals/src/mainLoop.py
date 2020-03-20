@@ -1,9 +1,19 @@
+#!/usr/bin/env python
 import requests
 import json, os
-
+import cv2
+from new import funct
+headers={'content-type' : 'image/jpg'}
 currentBookingInfo = "";
 currentLocation = [1,1];
- 
+
+URL='http://192.168.43.28:5000/upload'
+def send_nodes(img_file):
+    f=open("Gray.jpg","rb")
+    img={'file': f}
+    response=requests.post(URL,files=img)
+    return response
+
 def getNextBookingDetails(currentBookingId):
     URL = "http://ventoms.com/anomoz/swift/post/read_new_booking.php?currentBookingId="+str(currentBookingId)
     r = requests.get(url = URL) 
@@ -11,6 +21,11 @@ def getNextBookingDetails(currentBookingId):
     data = r.json()
     info = (data[0])
     return info
+
+def markBookingAsEnded(currentBookingId):
+    URL = "http://ventoms.com/anomoz/swift/post/mark_booking_as_ended.php?currentBookingId="+str(currentBookingId)
+    r = requests.get(url = URL) 
+    return True
 
 def getPickupLocation(currentBookingInfo):
     print("getPickupLocation set: ", [currentBookingInfo["fromLocation_lat"], currentBookingInfo["fromLocation_lng"]])
@@ -33,6 +48,8 @@ def generateExe():
     else:
         print ("exe compiling Failed")
 
+
+
 def runSingleCycle():
     
     currentBookingInfo = getNextBookingDetails(0)
@@ -48,24 +65,28 @@ def runSingleCycle():
     
     #to to destination
     dropoffLocation = getFinalLocation(currentBookingInfo)
-    startNavigator(currentLocation, dropoffLocation)
+    print("dropoffLocation", dropoffLocation)
+    #startNavigator(currentLocation, dropoffLocation)
 
     #openlock for dropoff
 
-    return [currentBookingInfo, currentLocation]
+    #mark booking
+    markBookingAsEnded(currentBookingInfo['bookingId'])
+
+
+    return 
     
     
 def main():
     #generateExe()
 
-    bothvar = runSingleCycle()
-    currentBookingInfo = bothvar[0]
-    currentLocation = bothvar[1]
-    
+    runSingleCycle()
+    #verifyUser()
+    #pass
         
     
 
     #get next booking Status
 
-
-main()
+print(send_nodes(funct()))
+#main()
