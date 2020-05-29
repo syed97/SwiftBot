@@ -21,8 +21,8 @@
    
    7) To run the navigation stack (main program), you need to upload the main code under arduino directory, in github, to arduino uno. Now, for every command, open a terminal and run them in parallel. Also every one of these terminals need to have catkin_ws as the working directory:
        - roslaunch rplidar_ros rplidar.launch               (This will turn on the lidar)
-       - roslaunch my_robot_name_2d_nav my_robot_configuration.launch 
-       - rosrun my_robot_name_2d_nav move_base.launch
+       - roslaunch my_robot_name_2dnav my_robot_configuration.launch 
+       - rosrun my_robot_name_2dnav move_base.launch
        - rviz rviz                                          (To visualize the robot's movement)
        - python src/simple_navigation_goals/src/mainLoop.py  (If you want it to move to a hard coded destination. This will move robot to cordinate (1,0,0))
        
