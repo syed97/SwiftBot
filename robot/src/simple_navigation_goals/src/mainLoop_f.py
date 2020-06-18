@@ -17,7 +17,7 @@ customerId = None
 pub = rospy.Publisher('locker', Float32, queue_size=10)
 rospy.init_node('talker', anonymous=False)
 
-URL='https://186ad9c5edee.ngrok.io/upload'
+URL='https://8066ab1ca4ae.ngrok.io/upload'
 
 def send_nodes(img_file=None):
     f=open("Gray.jpg","rb")
@@ -25,6 +25,8 @@ def send_nodes(img_file=None):
     response=requests.post(URL,files=img)
     response=response.json()
     print(response)
+    if " " in response['message']:
+        return response['message'].replace(" ","_")
     return response['message']
 
 def getNextBookingDetails(currentBookingId):
@@ -61,8 +63,8 @@ def startNavigator(resp):
     #     print("program finished successfully")
     # else:
     #     print("launch failed")
-    URL = "http://192.168.86.28:2015/movebase?resp="+str(resp[0])+"&resp1="+str(resp[1])
-    r = requests.get(url = URL) 
+    URL = "http://192.168.86.28:2020/movebase?resp="+str(resp[0])+"&resp1="+str(resp[1])
+    r = requests.get(url = URL)
     return True
     
 def generateExe():
@@ -111,7 +113,7 @@ def Get_pin():
 def runSingleCycle():
     
     currentBookingInfo = getNextBookingDetails(0)
-    #currentBookingInfo = {'bookingId': '187', 'timeAdded': '1573634449', 'fromLocation': 'Auditorium', 'toLocation': 'Auditorium', 'fromPerson': 'Dr. taj', 'toPerson': 'Ahsan', 'status': 'waiting', 'fromLocation_lat': '1.17', 'fromLocation_lng': '0.77', 'toLocation_lat': '0.17', 'toLocation_lng': '-0.775'}
+    #currentBookingInfo = {'bookingId': '187', 'timeAdded': '1573634449', 'fromLocation': 'Auditorium', 'toLocation': 'Auditorium', 'fromPerson': 'Dr. taj', 'toPerson': 'Ahsan', 'status': 'waiting', 'fromLocation_lat': '1.973', 'fromLocation_lng': '0.171', 'toLocation_lat': '0.52', 'toLocation_lng': '1.00'}
     print("currentBookingInfo updated: ", currentBookingInfo)
     customerId=currentBookingInfo['toPerson']
     #go to pickup location
@@ -133,7 +135,7 @@ def runSingleCycle():
 	    name=send_nodes(funct())
 	except:
 	    print("no")
-    if name==customerId:
+    if name==currentBookingInfo["toPerson"]:
         open_lock(1)
         print("Need pin to unlock")
     else:
